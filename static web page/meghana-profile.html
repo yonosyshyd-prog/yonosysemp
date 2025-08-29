@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #89f7fe;
+      margin: 0;
+      padding: 20px;
+      text-align: center;
+      height: 100vh;
+      overflow-y: auto;  /* enables vertical scrolling */
+    }
+
+    .container {
+      width: 80%;
+      background: #cce6ff;
+      padding: 30px;
+      border-radius: 12px;
+      max-width: 700px;
+      margin: 20px auto;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    }
+
+    .circle-img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid #4CAF50;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #2e8b57;
+      margin-bottom: 5px;
+    }
+
+    h3 {
+      margin-top: 20px;
+      color: #333;
+    }
+
+    .section-box {
+      background: #f0f8ff;
+      border-left: 6px solid #4CAF50;
+      padding: 20px;
+      margin: 15px 0;
+      border-radius: 10px;
+      text-align: left;
+    }
+
+    .section-box p, 
+    .section-box li {
+      margin: 8px 0;
+      font-size: 16px;
+      color: #444;
+    }
+
+    .section-box strong {
+      color: #2e8b57;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* Resume Button */
+    .resume-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 25px;
+      background: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .resume-btn:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Profile -->
+    <img src="E:\html\pic.jpg.jpeg" alt="Profile" class="circle-img">
+    <h2>Meghana Kolla</h2>
+    <p><b>DOB:</b> 09 August 2002</p>
+    <p><b>Email:</b> kollameghana412@gmail.com</p>
+    <p><b>Phone:</b> 9292759537</p>
+
+    <!-- Education -->
+    <h3>🎓 Education Details</h3>
+    <div class="section-box">
+      <p><strong>B.Tech:</strong> Computer Science and Engineering <br>
+         Amrita Sai Institute of Science and Technology (2019–2023)</p>
+      <p><strong>MPC:</strong> Narayana Junior College (2017–2019)</p>
+      <p><strong>SSC:</strong> Ideal High School (2017)</p>
+    </div>
+
+    <!-- Skills -->
+    <h3>💻 Technical Skills</h3>
+    <div class="section-box">
+      <p>Java | HTML | Spring Boot | MySQL</p>
+    </div>
+
+    <!-- Projects -->
+    <h3>📂 Projects</h3>
+    <div class="section-box">
+      <ul>
+        <li>AI Based Virtual Assistant on Windows</li>
+        <li>Student Management System (Java + MySQL using RESTful API)</li>
+        
+      </ul>
+    </div>
+
+    <!-- Resume Download Button -->
+    <a href="file:///E:/html/Lakshmi_resume.pdf" download class="resume-btn">📥 Download Resume</a>
+  </div>
+</body>
+</html>
