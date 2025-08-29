@@ -1,0 +1,159 @@
+/* Page background */
+body {
+    
+    background-color: #ccf0ff; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 75px 0;
+}
+
+
+.profile {
+    background-color: #ffffff; 
+    text-align: center;
+    padding: 75px 75px;
+    border-radius: 30px;
+    width: 550px;
+}
+
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid #595959;
+    margin-bottom: 15px;
+}
+
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+
+
+h2 {
+    font-size: 22px;
+    color: #fc2c03;
+    margin-bottom: 17px;
+    text-decoration: underline;
+}
+
+
+.details {
+    background-color: #e0f7ff; 
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.details p {
+    margin: 7px 0;
+    font-size: 17px;
+}
+
+
+.education {
+    background-color: #d1e7dd; 
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+}
+
+.education p {
+    margin: 7px 0;
+    font-size: 17px;
+}
+.skills {
+    text-align: center;
+    background-color: #fff3e6;
+    padding: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+}
+
+.skills h2 {
+    color: #fc2c03;
+    margin-bottom: 15px;
+    text-decoration: underline;
+}
+
+.skill-list {
+    display: flex;
+    gap: 15px;
+}
+
+.skill-list span {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+}
+.resume-link {
+  display: inline-block;
+  padding: 8px 8px;
+  background-color: #a83c32;  
+  color: white;
+  text-decoration: none;
+  border-radius: 18px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.resume-link:hover {
+  background-color: #0056b3;  
+  transform: scale(1.05);     
+}
+
+.resume-link:active {
+  background-color: #004080;
+  transform: scale(0.95);
+}
+
+fieldset {
+  border: none;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom: 25px;
+  background: linear-gradient(135deg, #f9f9f9, #e6f7ff);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+legend {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  background: #a84232;
+  padding: 8px 18px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.tools {
+  text-align: center;
+  background-color: #fef7e6;
+  padding: 30px;
+  border-radius: 25px;
+  margin-top: 25px;
+}
+
+.tool-list {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.tool-list span {
+  background-color: #28a745;
+  color: white;
+  padding: 10px 12px;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+
+
