@@ -1,0 +1,25 @@
+
+          
+.p {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .p {
+        grid-template-columns: 1fr; 
+    }
+.circular--portrait { position: relative; width: 200px; height: 200px; overflow: hidden; border-radius: 50%; } 
+.img { width: 100%; height: auto;}
+     
+   
+   
+
+    
+        
+    
+        
+    
+}
