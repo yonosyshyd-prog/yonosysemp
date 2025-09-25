@@ -1,159 +1,170 @@
 /* Page background */
 body {
-    
-    background-color: #ccf0ff; 
+    background-color: #f0f4f8;  /* softer grayish blue */
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     padding: 75px 0;
+    margin: 0;
 }
 
-
+/* Profile container */
 .profile {
     background-color: #ffffff; 
     text-align: center;
-    padding: 75px 75px;
-    border-radius: 30px;
+    padding: 60px 60px;
+    border-radius: 20px;
     width: 550px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
 
-
+/* Profile picture */
 .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
-    border: 3px solid #595959;
+    border: 2px solid #6c757d; /* softer border */
     margin-bottom: 15px;
 }
 
-
+/* Name */
 h1 {
-    font-size: 26px;
-    margin-bottom: 25px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50; /* professional dark navy */
+    font-weight: 600;
 }
 
-
+/* General Headings */
 h2 {
     font-size: 22px;
-    color: #fc2c03;
+    color: #2c3e50;
     margin-bottom: 17px;
     text-decoration: underline;
 }
 
-
+/* Personal Details */
 .details {
-    background-color: #e0f7ff; 
+    background-color: #f9fbfd; 
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 12px;
     margin-bottom: 20px;
     text-align: left;
 }
 
 .details p {
     margin: 7px 0;
-    font-size: 17px;
+    font-size: 16px;
+    color: #444;
 }
 
-
+/* Education */
 .education {
-    background-color: #d1e7dd; 
+    background-color: #f9fbfd; 
     padding: 20px;
-    border-radius: 15px;
+    border-radius: 12px;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .education p {
     margin: 7px 0;
-    font-size: 17px;
-}
-.skills {
-    text-align: center;
-    background-color: #fff3e6;
-    padding: 20px;
-    border-radius: 15px;
-    margin-top: 10px;
+    font-size: 16px;
+    color: #444;
 }
 
-.skills h2 {
-    color: #fc2c03;
-    margin-bottom: 15px;
-    text-decoration: underline;
+/* Technical Skills */
+.skills {
+    text-align: center;
+    background-color: #f5f7fa;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .skill-list {
     display: flex;
-    gap: 15px;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .skill-list span {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 10px;
-    border-radius: 20px;
-    font-size: 12px;
+    background-color: #e0e7ef;  
+    color: #2c3e50;
+    padding: 8px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #cfd8e3;
 }
+
+/* Tools Section */
+.tools {
+    text-align: center;
+    background-color: #f9f9fb;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.tool-list {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tool-list span {
+    background-color: #e8f0f5;
+    color: #34495e;
+    padding: 8px 14px;
+    border-radius: 18px;
+    font-size: 13px;
+    font-weight: 500;
+    border: 1px solid #d0dae3;
+}
+
+/* Resume Link Button */
 .resume-link {
   display: inline-block;
-  padding: 8px 8px;
-  background-color: #a83c32;  
+  padding: 8px 14px;
+  background-color: #2c3e50;  
   color: white;
   text-decoration: none;
   border-radius: 18px;
-  font-weight: bold;
+  font-weight: 500;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .resume-link:hover {
-  background-color: #0056b3;  
+  background-color: #1a252f;  
   transform: scale(1.05);     
 }
 
 .resume-link:active {
-  background-color: #004080;
+  background-color: #0d1419;
   transform: scale(0.95);
 }
 
+/* Fieldset */
 fieldset {
   border: none;
-  border-radius: 15px;
-  padding: 25px;
+  border-radius: 12px;
+  padding: 20px;
   margin-bottom: 25px;
-  background: linear-gradient(135deg, #f9f9f9, #e6f7ff);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  background: #ffffff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 legend {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
-  color: white;
-  background: #a84232;
-  padding: 8px 18px;
-  border-radius: 20px;
+  color: #ffffff;
+  background: #2c3e50;
+  padding: 6px 14px;
+  border-radius: 14px;
   text-align: center;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
-.tools {
-  text-align: center;
-  background-color: #fef7e6;
-  padding: 30px;
-  border-radius: 25px;
-  margin-top: 25px;
-}
-
-.tool-list {
-  display: flex;
-  gap: 15px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.tool-list span {
-  background-color: #28a745;
-  color: white;
-  padding: 10px 12px;
-  border-radius: 25px;
-  font-size: 14px;
-}
-
-
 
