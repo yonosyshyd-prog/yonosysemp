@@ -1,4 +1,4 @@
-/* Card Grid */
+/* Card Grid *//* Card Grid */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
