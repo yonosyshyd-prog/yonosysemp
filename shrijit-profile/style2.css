@@ -139,16 +139,18 @@ body {
   Cards (Projects, Experience, Education)
 ------------------- */
 .card-grid {
-  display: grid;
+  display: flex;
+  justify-content: center;  /* centers all cards */
   gap: 20px;
+  flex-wrap: nowrap;        /* ensures all stay in one line */
+  overflow-x: auto;         /* allows horizontal scroll if too many cards */
 }
 
 .card {
-  background: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  flex: 1 1 auto;           /* cards shrink and grow dynamically */
+  min-width: 200px;         /* prevents them from becoming too tiny */
+  text-align: center;       /* ensures contents stay aligned in one line */
+  white-space: nowrap;      /* keeps text in one line */
 }
 
 .card:hover {
@@ -237,4 +239,5 @@ footer a:hover {
     grid-template-columns: repeat(2, 1fr);
   }
 }
+
 
