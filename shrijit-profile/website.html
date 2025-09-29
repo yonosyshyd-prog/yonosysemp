@@ -4,21 +4,32 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shrijit Das | Resume</title>
+  <style>
+  .btn {
+    padding: 10px 20px;
+    height: 45px; /* ✅ Fixed height for both */
+    display: inline-flex;
+    align-items: center; /* ✅ Vertically centers text */
+    justify-content: center;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+  }
+
+  .btn-back {
+    background: #6c757d;
+  }
+
+  .btn-download {
+    background: #0073e6;
+    margin-bottom: 15px;
+  }
+</style>
   <!-- html2pdf.js CDN -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
-
-<div style="display: flex; gap: 10px; margin-bottom: 15px;">
-  <!-- Back Button -->
-  <button onclick="goBack()" style="padding: 10px 20px; background: #6c757d; color: white; border: none; border-radius: 6px; cursor: pointer;">
-    ⬅ Back
-  </button>
-
-  <button onclick="downloadPDF()" style="padding: 10px 20px; background: #0073e6; color: white; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 15px;">
-    ⬇ Download my Resume as PDF
-  </button>
-</div>
 
   <!-- Resume Content Starts -->
   <div id="resume-content">
@@ -45,25 +56,21 @@
     <!-- Professional Summary -->
     <h2>Professional Summary</h2>
     <ul>
-  <li>Worked on integrating web applications with relational databases (MySQL/Oracle) for dynamic data management.</li>
-  <li>Hands-on experience in developing and maintaining Java-based web applications using Servlets, JSP, and JDBC.</li>
-  <li>Hands-on experience in developing dynamic web-based software applications.</li>
-  <li>Strong understanding of the Software Development Life Cycle (SDLC).</li>
-  <li>Experienced in developing and delivering projects using the Agile model.</li>
-  <li>Solid knowledge of White-box Testing and Black-box Testing.</li>
-  <li>Strong expertise in System Testing including Smoke Testing, Retesting, Regression Testing, and Sanity Testing.</li>
-  <li>Proficient in issue tracking and project management using tools such as JIRA for effective collaboration and task tracking.</li>
-  <li>Comfortable with inspecting and validating locators using development tools such as SelectorsHub and TruePath.</li>
-  <li>Experienced to handle FRS, FR, CR, and Bugs.</li>
-  <li>Experienced in writing unit test cases for fixed Functional Requirement Specifications (FRS), Feature Requests (FR), and Change Requests (CR).</li>
-  <li>Able to design and maintain Traceability Matrix to ensure complete test coverage and requirements validation.</li>
-  <li>Skilled in handling GitHub repositories for version control, collaboration, and code management.</li>
-  <li>Proficient in debugging and resolving issues in Java-based web applications, ensuring seamless performance and reliability.</li>
-  <li>Strong ability to analyze root causes of errors and implement effective bug fixes in full-stack Java projects.</li>
-  <li>Knowledge of deploying and managing applications on Apache Tomcat server.</li>
-  <li>Skilled in creating and managing Requirement Traceability Matrix (RTM) for effective requirement tracking and validation.</li>
-</ul>
-
+      <li>Hands-on experience in developing dynamic web-based software applications using MVC.</li>
+      <li>Strong understanding of the Software Development Life Cycle (SDLC).</li>
+      <li>Experienced in developing and delivering projects using the Agile model.</li>
+      <li>Solid knowledge of White-box Testing and Black-box Testing.</li>
+      <li>Strong expertise in System Testing including Smoke Testing, Retesting, Regression Testing, and Sanity Testing.</li>
+      <li>Proficient in identifying, analyzing, and resolving bugs to ensure optimal application performance and stability.</li>
+      <li>Proficient in issue tracking and project management using tools such as JIRA for effective collaboration and task tracking.</li>
+      <li>Comfortable with inspecting and validating locators using development tools such as SelectorsHub and TruePath.</li>
+      <li>Experienced in writing unit test cases for fixed Functional Requirement Specifications (FRS), Feature Requests (FR), and Change Requests (CR).</li>
+      <li>Able to design and maintain Traceability Matrix to ensure complete test coverage and requirements validation.</li>
+      <li>Skilled in handling GitHub repositories for version control, collaboration, and code management.</li>
+      <li>Detail-oriented software developer with hands-on experience in backend development, microservices, and database design.</li>
+      <li>Skilled in Java, Spring Boot, and SQL optimization, with proven contributions to building secure, scalable APIs and production-ready features during internships.</li>
+      <li>Passionate about problem-solving and eager to contribute to impactful projects as a full-time developer.</li>
+    </ul>
 
     <hr>
 
@@ -140,6 +147,12 @@
     <h2>Contact</h2>
     <p>Email: <a href="mailto:info@yonosys.com">info@yonosys.com</a></p>
 
+    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
+  <!-- Back Button -->
+  <button class="btn btn-back" onclick="goBack()">⬅ Back</button>
+<button class="btn btn-download" onclick="downloadPDF()">⬇ Download my Resume as PDF</button>
+</div>
+
   </div>
   <!-- Resume Content Ends -->
 
@@ -168,4 +181,3 @@
 
 </body>
 </html>
-
