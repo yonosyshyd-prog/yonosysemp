@@ -9,10 +9,16 @@
 </head>
 <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
 
-  <!-- Download Button -->
+<div style="display: flex; gap: 10px; margin-bottom: 15px;">
+  <!-- Back Button -->
+  <button onclick="goBack()" style="padding: 10px 20px; background: #6c757d; color: white; border: none; border-radius: 6px; cursor: pointer;">
+    ⬅ Back
+  </button>
+
   <button onclick="downloadPDF()" style="padding: 10px 20px; background: #0073e6; color: white; border: none; border-radius: 6px; cursor: pointer; margin-bottom: 15px;">
     ⬇ Download my Resume as PDF
   </button>
+</div>
 
   <!-- Resume Content Starts -->
   <div id="resume-content">
@@ -51,6 +57,8 @@
       <li>Able to design and maintain Traceability Matrix to ensure complete test coverage and requirements validation.</li>
       <li>Skilled in handling GitHub repositories for version control, collaboration, and code management.</li>
       <li>Detail-oriented software developer with hands-on experience in backend development, microservices, and database design.</li>
+      <li>Skilled in Java, Spring Boot, and SQL optimization, with proven contributions to building secure, scalable APIs and production-ready features during internships.</li>
+      <li>Passionate about problem-solving and eager to contribute to impactful projects as a full-time developer.</li>
     </ul>
 
     <hr>
@@ -112,7 +120,7 @@
     <h2>Education</h2>
     <p><b>B.Tech in Electronics & Communication Engineering</b><br>
     Siliguri Institute of Technology, Darjeeling (2020–2024)<br>
-    CGPA: 8.49</p>
+    CGPA: 77.4%</p>
 
     <p><b>Higher Secondary (Class 12)</b><br>
     St. Xavier's School, Malda (2019–2020)<br>
@@ -144,9 +152,15 @@
       };
       html2pdf().set(options).from(element).save();
     }
+
+    function goBack() {
+    if (document.referrer) {
+      window.history.back();
+    } else {
+      window.location.href = '/'; // Replace with your homepage URL if needed
+    }
+  }
   </script>
 
 </body>
 </html>
-
-
