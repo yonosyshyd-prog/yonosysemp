@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sarbeswar Palai - Portfolio</title>
+  <style>
+    :root {
+      --accent1: #ff6f61;
+      --accent2: #6a5acd;
+      --accent3: #20b2aa;
+      --accent4: #ffcc00;
+      --text: #333;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    body {
+      background: linear-gradient(270deg, var(--accent1), var(--accent2), var(--accent3), var(--accent4));
+      background-size: 800% 800%;
+      animation: gradientBG 6s ease infinite; /* faster */
+      color: var(--text);
+      overflow-x: hidden;
+    }
+    @keyframes gradientBG {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      color: white;
+      position: relative;
+      background: rgba(0,0,0,0.4);
+      border-bottom: 3px solid rgba(255,255,255,0.3);
+    }
+    header img {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      border: 4px solid white;
+      margin-bottom: 15px;
+      animation: float 4s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
+    }
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    section h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: white;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
+      animation: fadeIn 1.2s ease;
+    }
+    .about, .skills, .projects, .contact {
+      background: rgba(255,255,255,0.85);
+      margin-bottom: 40px;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+      animation: slideUp 1.2s ease;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .skills .bar {
+      background: #eee;
+      border-radius: 8px;
+      overflow: hidden;
+      margin: 15px 0;
+    }
+    .skills .bar div {
+      height: 10px;
+      border-radius: 8px;
+      animation: progress 2s ease forwards; /* faster */
+    }
+    @keyframes progress {
+      from { width: 0; }
+      to { width: var(--target); }
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s, box-shadow 0.3s;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-card:hover {
+      transform: translateY(-8px) scale(1.02);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+    .project-card h3 {
+      margin-bottom: 10px;
+      color: var(--accent2);
+    }
+    .project-card p {
+      flex: 1;
+      margin-bottom: 15px;
+    }
+    .project-card button {
+      padding: 10px 14px;
+      border: none;
+      border-radius: 6px;
+      background: var(--accent3);
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .project-card button:hover {
+      background: var(--accent1);
+      transform: scale(1.05);
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    .contact-info p {
+      margin: 10px 0;
+    }
+    .contact-info a {
+      color: var(--accent2);
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .contact-info a:hover {
+      color: var(--accent1);
+    }
+    .resume-btn {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      background: var(--accent2);
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.3s;
+      text-decoration: none;
+    }
+    .resume-btn:hover {
+      background: var(--accent1);
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="SarbeswarImage3.jpg" alt="Profile Photo">
+    <h1>Sarbeswar Palai</h1>
+    <p>Java Developer | Spring Boot Enthusiast</p>
+  </header>
+
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hello! I'm Sarbeswar, a passionate Java Developer with hands-on experience in building scalable applications using Core Java, JDBC, Servlets, and Spring Boot. I love solving problems and bringing ideas to life with clean, efficient code.</p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills</h2>
+    <div class="bar"><div style="--target:85%; background: var(--accent1);"></div></div>
+    <p>Java - 85%</p>
+    <div class="bar"><div style="--target:78%; background: var(--accent2);"></div></div>
+    <p>Spring Boot - 78%</p>
+    <div class="bar"><div style="--target:70%; background: var(--accent3);"></div></div>
+    <p>J2EE - 70%</p>
+    <div class="bar"><div style="--target:75%; background: var(--accent4);"></div></div>
+    <p>SQL - 75%</p>
+    <div class="bar"><div style="--target:80%; background: var(--accent2);"></div></div>
+    <p>HTML - 80%</p>
+    <div class="bar"><div style="--target:75%; background: var(--accent3);"></div></div>
+    <p>CSS - 75%</p>
+    <div class="bar"><div style="--target:65%; background: var(--accent1);"></div></div>
+    <p>JavaScript - 65%</p>
+  </section>
+
+  <section class="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Bus Ticket Counter</h3>
+        <p>A Java project to manage bus ticket booking and availability with JDBC.</p>
+        <button>View Project</button>
+      </div>
+      <div class="project-card">
+        <h3>Hotel Management System</h3>
+        <p>Comprehensive management system for hotel operations built using Java.</p>
+        <button>View Project</button>
+      </div>
+      <div class="project-card">
+        <h3>Car Showroom</h3>
+        <p>A Java + JDBC application for managing car sales and inventory.</p>
+        <button>View Project</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>🌐 Company Website: <a href="https://www.yonosys.com" target="_blank">www.yonosys.com</a></p>
+      <p>📧 Company Email: <a href="mailto:info@yonosys.com">info@yonosys.com</a></p>
+      <a href="SarbeswarResume222.pdf" download>
+        <button style="
+          padding: 12px 20px;
+          border: none;
+          border-radius: 8px;
+          background: linear-gradient(90deg, #ff6a00, #ee0979);
+          color: #fff;
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+          transition: transform 0.3s;
+        ">
+          📄 Download Resume
+        </button>
+      </a>
+    </div>
+  </section>
+</body>
+</html>

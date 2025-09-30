@@ -1,0 +1,136 @@
+
+body {
+    background-color: #abcded; 
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+/* Profile card */
+.profile {
+    background-color: #ebebeb; 
+    text-align: center;
+    padding: 50px 50px;
+    border-radius: 25px;
+    width: 600px;
+}
+
+/* Profile picture */
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 2px solid #383737f2;
+}
+
+/* Name */
+h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    margin-top: 3px;
+}
+h2 {
+    font-size: 20px;
+    color: #f39c12;
+    margin-bottom: 10px;
+    text-decoration: underline;
+}
+/* Personal Details */
+.details {
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.details p {
+    margin: 7px 0;
+    font-size: 17px;
+}
+
+.details strong{
+    font-size: 16px;
+}
+
+/* Educational Background */
+.education {
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.education p{
+    margin: 6px 0;
+    font-size: 12px;
+}
+
+.education strong{
+    font-size: 16px;
+}
+.technical {
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-align: left;
+}
+
+.technical h2 {
+    color: #f39c12;
+    margin-bottom: 20px;
+    text-decoration: underline;
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+}
+
+.skills span {
+    background-color: #42d57f;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+fieldset {
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  background: linear-gradient(135deg, #c2f58b, #e6f7ff);
+  box-shadow: 0 4px 8px rgba(239, 102, 102, 0.1);
+}
+
+legend {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background: #ff846e;
+  padding: 8px 18px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(13, 5, 5, 0.2);
+}
+
+.upload {
+  display: inline-block;
+  padding: 10px 18px;
+  background-color: #5ba7f8;  
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.upload:hover {
+  background-color: #557da8;  
+  transform: scale(1.05);     
+}
+
+.upload:active {
+  background-color: #23598f;
+  transform: scale(0.95);
+}

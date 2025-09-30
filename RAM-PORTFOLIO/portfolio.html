@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Eda Ram Charan | Portfolio</title>
+  <style>
+    /* Global Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", Arial, sans-serif; color: #333; line-height: 1.6; background: #f5f7fa; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; border-radius: 50%; }
+    section { padding: 4rem 10%; }
+
+    /* Header */
+    header {
+      background: #1e3c72;  /* blue gradient background */
+      background: linear-gradient(to right, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 10% 5rem;
+    }
+    header img {
+      width: 150px; height: 150px;
+      border-radius: 50%; border: 4px solid #fff;
+      margin-bottom: 1rem;
+    }
+    header h1 { font-size: 2.5rem; margin-bottom: .5rem; }
+    header p { font-size: 1.1rem; margin: .3rem 0; }
+    header a { color: #ffdd57; font-weight: bold; }
+    header a:hover { text-decoration: underline; }
+
+    /* Navbar */
+    nav {
+      background: #fff;
+      padding: 1rem 10%;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      border-bottom: 1px solid #eee;
+      position: sticky;
+      top: 0;
+    }
+    nav a { font-weight: 600; color: #333; }
+    nav a:hover { color: #2a5298; }
+
+    /* About */
+    #about { margin-top: 2rem; }
+    #about h2 { color: #2a5298; margin-bottom: 1rem; }
+
+    /* Projects */
+    #projects h2, #skills h2, #contact h2 { margin-bottom: 2rem; color: #2a5298; }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid #eee;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,.05);
+      transition: transform .2s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card img { height: 180px; object-fit: cover; }
+    .card h3 { margin: 1rem; font-size: 1.25rem; }
+    .card p { margin: 0 1rem 1.5rem; font-size: .95rem; color: #555; }
+
+    /* Skills */
+    .skills-list {
+      display: flex; 
+      flex-wrap: wrap; 
+      gap: 1rem;
+    }
+    .skill {
+      background: #2a5298; 
+      color: #fff; 
+      padding: .5rem 1rem;
+      border-radius: 20px; 
+      font-size: .9rem;
+    }
+
+    /* Contact */
+    .contact-form {
+      max-width: 600px; 
+      margin: auto;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%; 
+      padding: .8rem; 
+      margin-bottom: 1rem; 
+      border: 1px solid #ccc; 
+      border-radius: 5px;
+      font-size: 1rem;
+    }
+    .contact-form button {
+      background: #2a5298; 
+      color: #fff; 
+      padding: .8rem 1.5rem;
+      border: none; 
+      border-radius: 5px; 
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .contact-form button:hover { background: #1e3c72; }
+
+    /* Footer */
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 1.5rem;
+      font-size: .9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <>
+    <img src="ram.jpeg" alt="Eda Ram Charan">
+    <h1>Eda Ram Charan</h1>
+    <p>Email: <a href="mailto:edaramcharan@example.com">edaramcharan@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+  </header>
+
+  <!-- Navbar -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hello! I’m <strong>Eda Ram Charan</strong>, a passionate web developer who loves building clean, modern, and responsive websites. 
+    I specialize in front-end development but also enjoy full-stack projects with JavaScript, Python, and databases.</p>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <img src="https://picsum.photos/400/200" alt="Project 1">
+        <h3>Portfolio Website</h3>
+        <p>A personal portfolio built with HTML, CSS, and JavaScript to showcase my work.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/401/200" alt="Project 2">
+        <h3>E-Commerce Store</h3>
+        <p>A responsive online store built with React and Node.js, integrated with payment gateway.</p>
+      </div>
+      <div class="card">
+        <img src="https://picsum.photos/402/200" alt="Project 3">
+        <h3>Blog Platform</h3>
+        <p>A blogging platform with CMS features, developed using Python (Django) and MySQL.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-list">
+      <span class="skill">HTML5</span>
+      <span class="skill">CSS3</span>
+      <span class="skill">JavaScript</span>
+      <span class="skill">React</span>
+      <span class="skill">Node.js</span>
+      <span class="skill">Python</span>
+      <span class="skill">Java</span>
+      <span class="skill">SQL / MongoDB</span>
+      <span class="skill">Git & GitHub</span>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Eda Ram Charan. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

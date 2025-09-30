@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivkumar Gadgi - Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', serif;
+            background-color: #f5f5f5;
+            padding: 25px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px 60px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 37px;
+            letter-spacing: 1px;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .header .location {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .header .contact {
+            font-size: 18px;
+        }
+
+        .header .contact a {
+            color: black;
+            text-decoration: underline;
+        }
+
+        .section-title {
+            font-size: 22px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            border-bottom: 1px solid black;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            font-size: 19px;
+            line-height: 1.6;
+        }
+
+        .content ul {
+            margin-left: 20px;
+        }
+
+        .content li {
+            margin-bottom: 8px;
+        }
+
+        .education-item, .experience-item, .project-item {
+            margin-bottom: 15px;
+        }
+
+        .education-item h3, .experience-item h3, .project-item h3 {
+            font-size: 19px;
+            font-weight: bold;
+            margin-bottom: 2px;
+        }
+
+        .education-item .details, .experience-item .details {
+            font-style: italic;
+            font-size: 17px;
+            margin-bottom: 5px;
+        }
+
+        .education-item .year, .experience-item .year {
+            float: right;
+            font-weight: normal;
+        }
+
+        .education-item .location, .experience-item .location {
+            float: right;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        .skills-section p {
+            margin-bottom: 3px;
+        }
+
+        .certification-item {
+            margin-bottom: 8px;
+            line-height: 1.6;
+        }
+
+        .cert-name {
+            font-weight: bold;
+        }
+
+        .signature {
+            text-align: right;
+            margin-top: 40px;
+            font-size: 12px;
+        }
+
+        .signature .name {
+            font-weight: bold;
+            font-size: 19px;
+        }
+
+        .print-button {
+		    text-align: center;
+		    margin-top: 30px;
+		}
+
+		.print-button button {
+		    background-color: #333;
+		    color: white;
+		    padding: 12px 30px;
+		    font-size: 15px;
+		    border: none;
+		    cursor: pointer;
+		    border-radius: 4px;
+		    width: 180px;
+		}
+
+		.print-button button a {
+		    color: white;
+		    text-decoration: none;
+		    display: block;
+		}
+
+		.print-button button:hover {
+		    background-color: #555;
+		}
+
+		@media print {
+		    body {
+		        background-color: white;
+		        padding: 0;
+		    }
+
+		    .container {
+		        box-shadow: none;
+		        padding: 20px;
+		        max-width: 100%;
+		    }
+
+		    .print-button {
+		        display: none;
+		    }
+		}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Shivkumar Gadgi</h1>
+            <div class="location">📍 Hyderabad</div>
+            <div class="contact">
+                ✉ <a href="mailto:info@yonosys.com " style="text-decoration: none;">info@yonosys.com</a> 🌐 <a href="http://www.yonosys.com" style="text-decoration: none;">Yonosys.com</a>
+            </div>
+        </div>
+
+        <div class="section-title">Professional Summary</div>
+        <div class="content">
+            <ul>
+                <li>Hands-on experience in <strong>developing and testing dynamic web-based applications</strong> with a strong understanding of the <strong>Software Development Life Cycle (SDLC).</strong></li>
+                <li>Proficient in <strong>Agile methodologies</strong>, collaborating effectively in cross-functional teams to deliver high-quality software.</li>
+                <li>Expertise in <strong>White-box</strong> and <strong>Black-box testing</strong>, with strong knowledge of System Testing including <strong>Smoke, Regression, Retesting, and Sanity testing</strong>.</li>
+                <li>Skilled in writing <strong>Unit Test cases</strong>, maintaining Traceability Matrices, and ensuring full test coverage against <strong>FRS, FR, and CR</strong>.</li>
+                <li>Experienced with tools such as <strong>Jira</strong> for project management, <strong>GitHub</strong> for version control, and <strong>SelectorsHub/TruePath</strong> for validating locators.</li>
+            </ul>
+        </div>
+
+        <div class="section-title">Technical Skills</div>
+        <div class="content skills-section">
+            <p><strong>Programming Languages:</strong> Java, HTML5, CSS3, JavaScript</p>
+            <p><strong>Frameworks:</strong> Spring Boot, Servlet, JSP, Bootstrap</p>
+            <p><strong>Database:</strong> Oracle, SQL</p>
+            <p><strong>Tools:</strong> Git, GitHub, Jira</p>
+        </div>
+
+        <div class="section-title">Experience</div>
+        <div class="content">
+            <div class="experience-item clearfix">
+                <h3>⊳ Yonosys Tech Pvt. Ltd.<span class="year">Sept 2024 – Present</span></h3>
+                <div class="details">Full Stack Java Developer <span class="location">Hyderabad</span></div>
+                <ul style="margin-top: 10px;">
+                    <li>Built and optimized backend services using <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>MySQL</strong>, and <strong>Spring Security</strong>.</li>
+                    <li>Developed <strong>RESTful APIs</strong> and integrated them with <strong>React</strong> frontend for seamless client-server communication.</li>
+                    <li>Used the <strong>Jira tool</strong> for issue tracking, task management, and team collaboration.</li>
+                    <li>Wrote and executed <strong>unit test cases</strong> performed <strong>API testing, debugging</strong>, and identified <strong>valid/invalid bugs</strong> to ensure high-quality, reliable applications.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item clearfix">
+                <h3>⊳ Eazy Bytz Infotech<span class="year">Aug 2024 – Sept 2024</span></h3>
+                <div class="details">Full Stack Java Developer (1-month Internship)<span class="location">Remote</span></div>
+                <ul style="margin-top: 10px;">
+                    <li>Built and optimized applications using <strong>Java</strong>, <strong>Spring Boot</strong> and <strong>MySQL</strong>.</li>
+					<li>Developed <strong>RESTful APIs</strong> optimized performance, and integrated them with <strong>HTML, CSS </strong>and <strong>JavaScript</strong> frontend for seamless client-server communication.</li>
+					<li>Developed and maintained <strong>Java-based web applications</strong> within <strong>cross-functional teams</strong> to deliver high-quality software solutions.</li>
+					<li>Worked with <strong>Postman</strong> for API testing to streamline the development workflow.</li>
+					<li>Improved API response time and application scalability through <strong>performance tuning</strong> and <strong>query optimization</strong>.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-title">Projects</div>
+        <div class="content">
+            <div class="project-item">
+                <h3>➣ Employee Management System</h3>
+                <ul style="margin-top: 10px;">
+                    <li>Developed a user-friendly Employee Management System to streamline employee record management for small and medium-sized businesses.</li>
+                    <li>Designed the front-end using <strong>ReactJS</strong> for an intuitive and responsive user experience.</li>
+                    <li>Implemented <strong>RESTful APIs</strong> with <strong>Spring Boot</strong> for efficient data handling and communication.</li>
+                    <li>Conducted API testing using <strong>Postman</strong> to ensure reliability and functionality.</li>
+                    <li>Created the persistence layer using <strong>Spring Data JPA</strong> for effective database management.</li>
+                    <li>Configured application settings in <strong>application.properties</strong> for environment setup.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>➣ Paying Guest Accommodation System</h3>
+                <ul style="margin-top: 10px;">
+                    <li>Developed a comprehensive <strong>Paying Guest Accommodation System</strong> to streamline property and tenant management for landlords and renters.</li>
+					<li>Built the front-end with <strong>HTML/CSS</strong> to deliver an engaging and responsive user interface.</li>
+					<li>Designed and implemented <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> for seamless data exchange between client and server.</li>
+					<li>Performed <strong>API testing</strong> with <strong>Postman</strong> to validate endpoints and ensure system reliability.</li>
+					<li>Utilized <strong>Spring Data JPA</strong> to manage database operations efficiently within the persistence layer.</li>
+                </ul>
+            </div>
+
+            <div class="project-item">
+                <h3>➣ Hostel Leave Application</h3>
+                <ul style="margin-top: 10px;">
+                    <li>Developed a <strong>Hostel Leave Application System</strong> to streamline the leave request process for hostel students.</li>
+					<li>Designed a simple and intuitive interface for students to submit leave applications easily.</li>
+					<li>Implemented <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> for efficient communication between front-end and back-end.</li>
+					<li>Conducted <strong>API testing</strong> with <strong>Postman</strong> to ensure reliability and proper functionality.</li>
+					<li>Created the persistence layer with <strong>Spring Data JPA</strong> to manage leave request records effectively.</li>
+					<li>Configured environment-specific settings using <strong>application.yml</strong> for seamless deployment.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section-title">Education</div>
+        <div class="content">
+            <div class="education-item clearfix">
+                <h3>N. K. Orchid College of Engineering & Technology <span class="year">2019 – 2023</span></h3>
+                <div class="details">Bachelor of Technology in Computer Science - <strong>CGPA - 8.3</strong> <span class="location">Solapur, Maharashtra</span></div>
+            </div>
+
+            <div class="education-item clearfix">
+                <h3>Higher Secondary Education (Class XII) <span class="year">2017 – 2019</span></h3>
+                <div class="details">D. B. F. Dayanand College of Arts & Science - <strong>Percentage - 63.69%</strong> <span class="location">Solapur, Maharashtra</span></div>
+            </div>
+
+            <div class="education-item clearfix">
+                <h3>Secondary Education (Class X) <span class="year">2017</span></h3>
+                <div class="details">Hindustani Convent Church Highschool and Jr College - <strong>Percentage - 82.2%</strong> <span class="location">Solapur, Maharashtra</span></div>
+            </div>
+        </div>
+
+        <div class="section-title">Certifications</div>
+		<div class="content">
+		    <div class="certification-item">
+		        <span class="cert-name">Full Stack Java Development Course</span>
+		        <span class="cert-provider">⎼ iHub Talent Info Systems</span>
+		    </div>
+		    <div class="certification-item">
+		        <span class="cert-name">Data Structure and Object Oriented Programming</span>
+		        <span class="cert-provider">⎼ APT TECH</span>
+		    </div>
+		    <div class="certification-item">
+		        <span class="cert-name">Programming Fundamentals</span>
+		        <span class="cert-provider">⎼ Duke University/Coursera</span>
+		    </div>
+		    <div class="certification-item">
+		        <span class="cert-name">Career Edge Knockdown the Lockdown</span>
+		        <span class="cert-provider">⎼ TCS iON</span>
+		    </div>
+		</div>
+
+        <div class="signature">
+            <div style="margin-top: 50px;">
+                <div class="name">Shivkumar Gadgi</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="print-button">
+        <button onclick="window.print()">Print</button>
+        <button><a class="nav-link" href="#" onclick="window.location.href='https://yonosyshyd-prog.github.io/yonosysemp/'; return false;">Back</a></button>
+    </div>
+</body>
+</html>
+
