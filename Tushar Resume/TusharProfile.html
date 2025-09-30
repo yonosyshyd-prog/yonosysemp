@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Thakur Tushar Singh Profile</title>
+        <style>
+    /* ======= Base (ATS-friendly: no colors, simple fonts) ======= */
+    :root { --page-width: 800px; }
+    html, body { padding: 0; margin: 0; }
+    body { font-family: "Times New Roman", Times, serif; line-height: 1.4; color: #000; background: #fff; }
+    .container { width:100%; max-width:none; margin:0; padding:16px; }
+
+    /* ======= Utility ======= */
+    .sr-only { position: absolute; left: -9999px; }
+    .muted { opacity: 0.9; }
+    .small { font-size: 0.95rem; }
+
+    /* ======= Actions (screen only) ======= */
+    .actions { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #000; padding: 8px 16px; display: flex; gap: 8px; z-index: 10; }
+    .actions button { border: 1px solid #000; background: #fff; padding: 8px 12px; cursor: pointer; font-size: 0.95rem; }
+    .actions button:focus { outline: 2px solid #000; outline-offset: 2px; }
+
+    /* ======= Header ======= */
+    header h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: 0.3px; font-family: "Times New Roman", Times, serif; font-weight: bold;}
+    header .role { font-weight: 600; margin: 0 0 8px; }
+    .contact { display: block; font-size: 0.98rem; }
+    .contact a { color: inherit; text-decoration: none; border-bottom: 1px dotted #000; }
+
+    /* ======= Sections ======= */
+    section { margin-top: 16px; }
+
+    .rule { height: 1px; background: #000; margin: 8px 0 12px; }
+    ul { margin: 6px 0 0 18px; padding: 0; }
+    li { margin: 4px 0; }
+
+    /* ======= Experience & Education Blocks ======= */
+    .block { margin-bottom: 10px; }
+    .block .row-1 { display: flex; justify-content: space-between; gap: 12px; font-weight: 600; }
+    .block .row-2 { display: flex; justify-content: space-between; gap: 12px; font-style: italic; }
+    .company-name {
+    font-size: 18px;   /* Increase text size */
+    font-weight: 900;  /* Optional — bolder */
+}
+
+h2 { 
+  font-size: 1.3rem; 
+  margin: 16px 0 8px; 
+  text-transform: capitalize;   /* ✅ First letter uppercase for each word */
+  letter-spacing: 0.3px;
+  font-weight: bold;
+}
+
+
+/* Make the main resume content fit within the viewport */
+#resume.container {
+  max-width: 100;       /* keep your desired width */
+  margin: 0 auto;         /* center horizontally */
+  height: 100%;           /* stretch to viewport height */
+  overflow: auto;         /* internal scroll if needed for print preview */
+  box-sizing: border-box; /* include padding in height */
+  padding: 16px;
+}
+
+/* buttons */
+
+.actions-bottom {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Center align */
+  margin-top: 20px;
+}
+
+.actions-bottom .btn,
+.actions-bottom button {
+  background-color: white;       /* White background */
+  color: #007bff;                /* Blue text */
+  padding: 10px 20px;
+  border: 2px solid #007bff;     /* Blue border */
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.actions-bottom .btn:hover,
+.actions-bottom button:hover {
+  background-color: #007bff;   /* Blue on hover */
+  color: white;                /* White text on hover */
+}
+
+.project-details ul {
+  list-style-type: square;
+}
+
+
+    /* Avoid multi-column layouts for ATS, keep everything single column */
+
+    /* ======= Print ======= */
+    @page { size: A4; margin: 14mm; }
+    @media print {
+      .actions { display: none !important; }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+    @media print {
+  .actions-bottom {
+    display: none !important; /* button container will not appear on printed page */
+  }
+}
+
+  </style>
+    </head>
+    <body>
+
+        <main id="resume" class="container" role="main">
+            <header style="display:flex;align-items:center;gap:50px;">
+                <div class="profile-photo" style="width:140px;height:140px;border-radius:50%;overflow:hidden;display:inline-block;">
+                <img src="Tushar Img.jpg" alt="Profile Photo"
+         style="width:95%;height:110%;object-fit:cover;object-position:center 30%;border-radius:50%;"/>
+                </div>
+
+
+                <div>
+                        <h1 style="font-size: 28px; font-weight: 900;">THAKUR TUSHAR SINGH</h1>
+                        <p class="role" style="font-size: 18px; font-weight: 600;">Java Full-Stack Developer</p>
+                        <a href="mailto:info@yonosys.com" style="font-size: 16px;">info@yonosys.com</a>&nbsp; &nbsp; &nbsp;
+                        <a href="https://www.yonosys.com" style="font-size: 16px;">www.yonosys.com</a><br>
+                </div>
+            </header>
+
+            <section CMBX12="summary">
+                <h2>Professional Summary</h2>
+                <div class="rule" CMBX12="true"></div>
+                <ul>
+  <!-- Developer-related skills -->
+  <li>Hands-on experience developing dynamic web-based applications using the <strong>MVC.</strong></li>
+  <li>Strong understanding of the <strong>Software Development Life Cycle (SDLC).</strong></li>
+  <li>Experienced in developing and delivering projects using the <strong>Agile model.</strong> </li>
+  <li>Proficient in handling <strong>Functional Requirement Specifications (FRS), Feature Requests (FR), Change Requests (CR),</strong> and <strong>bug management.</strong></li>
+  <li>Experienced in writing <strong>Unit Test Cases</strong> and maintaining comprehensive test coverage.</li>
+  <li>Proficient with issue tracking and project management tools such as <strong>Jira</strong> for collaboration and task tracking.</li>
+  <li>Experienced in managing <strong>GitHub</strong> repositories for version control and collaborative development.</li>
+  <li>Comfortable inspecting and validating locators using tools like <strong>SelectorsHub</strong> and <strong>TruePath.</strong></li>
+
+  <!-- Testing-focused skills -->
+  <li>Solid knowledge of <strong>White-box</strong> and <strong>Black-box Testing</strong> techniques.</li>
+  <li>Expertise in <strong>System Testing,</strong> including <strong>Smoke, Retesting, Regression,</strong> and <strong>Sanity Testing.</strong></li>
+  <li>Able to design and maintain a <strong>Traceability Matrix</strong> to ensure complete requirements validation.</li>
+
+                </ul>
+            </section>
+
+            <section aria-labelledby="education">
+                <h2>Education</h2>
+                <div class="rule" aria-hidden="true"></div>
+
+                <div class="block">
+                    <div class="row-1"><div>JB Institute of Engineering and
+                            Technology — B.Tech, Electronics & Computer
+                            Engineering</div><div>2020 – 2024</div></div>
+                    <div class="row-2"><div>CGPA:
+                            7.3</div><div>Hyderabad</div></div>
+                </div>
+
+                <div class="block">
+                    <div class="row-1"><div>Narayana Junior College —
+                            Intermediate (MPC)</div><div>2018 – 2020</div></div>
+                    <div class="row-2"><div>CGPA:
+                            8.2</div><div>Mehdipatnam</div></div>
+                </div>
+
+                <div class="block">
+                    <div class="row-1"><div>Janapriya High School —
+                            SSC</div><div>2005 – 2018</div></div>
+                    <div class="row-2"><div>CGPA:
+                            8.0</div><div>Hyderguda</div></div>
+                </div>
+            </section>
+
+            <section aria-labelledby="skills">
+                <h2>Technical Skills</h2>
+                <div class="rule" aria-hidden="true"></div>
+                <ul>
+                    <li><strong>Languages:</strong> Java, HTML5, CSS3, JavaScript</li>
+                    <li><strong>Databases:</strong> Oracle, SQL</li>
+                    <li><strong>Frameworks/Libraries:</strong> Spring Boot, React</li>
+                    <li><strong>Management Tool:</strong> Jira</li>
+                    <li><strong>Repository Management Tool:</strong> GitHub</li>
+                    <li><strong>API Testing Tool:</strong> Postman</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="experience">
+                <h2>Experience</h2>
+                <div class="rule" aria-hidden="true"></div>
+
+                <div class="block">
+                   <div class="row-1">
+                    <div class="company-name">➤ <u>Yonosys Technologies Pvt. Ltd</u></div>
+
+                        <div>Aug 2024 – Present · Hyderabad</div>
+                    </div>
+                    <div class="project-details">
+  <ul>
+    <li><strong>Project:</strong> PMS (Progress Mapping System)</li>
+    <li><strong>Role:</strong> Java Developer</li>
+    <li><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
+    <li><strong>Frameworks:</strong> Spring Boot</li>
+    <li><strong>Database:</strong> MySQL</li>
+  </ul>
+</div><br>
+
+                <div><strong><u>Project Description: </u></strong></div>
+                <ul>
+                        <li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.</li>
+                        <li>Designed and implemented the backend using Spring Boot to handle APIs, data processing, and business logic.</li>
+                        <li>Created a responsive front-end using HTML, CSS, and JavaScript for intuitive user interaction and real-time updates.</li>
+                        <li>Managed data persistence and retrieval using MySQL database for storing project and task records securely.</li>
+                        <li>Implemented role-based access and modular architecture to ensure scalability and maintainability.</li>
+                        <li>Conducted thorough testing and validation of APIs and frontend functionality to ensure reliability and performance.</li>
+                    </ul><br>
+                    <div><strong><u>Roles & Responsibilities:</u></strong></div>
+                    <ul>
+                        <li>Requirement analysis and understanding of functional specifications.</li>
+                        <li>Designing and developing code for new FRS/FR/CR requests.</li>
+                        <li>Debugging and resolving application issues and defects.</li>
+                        <li>Creating and executing unit test cases to ensure code quality.</li>
+                        <li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section aria-labelledby="projects">
+                <h2>Projects</h2>
+                <div class="rule" aria-hidden="true"></div>
+
+                <div class="company-name">➤  <strong><u>EMS (Employee Management System)</u></strong></div>
+                    <ul>
+                        <li>Developed a user-friendly <strong>Employee Management System</strong> to streamline employee record management for small and medium-sized businesses.</li>
+                        <li>Designed the front-end using <strong>ReactJS</strong> for an intuitive and responsive user experience.</li>
+                        <li>Implemented <strong>RESTful APIs</strong> with <strong>Spring Boot</strong> for efficient data handling and communication.</li>
+                        <li>Conducted <strong>API testing</strong> using <strong>Postman</strong> to ensure reliability and functionality.</li>
+                        <li>Created the persistence layer using <strong>Spring Data JPA</strong> for effective database management.</li>
+                        <li>Configured application settings in <strong>application.properties</strong> and <strong>application.yml</strong> for environment setup.</li>
+                    </ul><br>
+
+                    <div class="company-name">➤  <strong><u>Smart City Street Hygiene Monitoring Using Mobile Edge Computing and Deep Learning</strong></u></div>
+                    <ul>
+                        <li>Developed a Smart City Road Cleanliness Monitoring system using <strong>Mobile Edge Computing</strong> and <strong>Deep Learning.</strong></li>
+                        <li>Captured and processed street garbage images using <strong>Mobile Edge Servers</strong> for temporary storage and preprocessing.</li>
+                        <li>Implemented <strong>Faster R-CNN</strong> for automated detection, classification, and counting of road trash.</li>
+                        <li>Transmitted processed data to the <strong>Cloud Server</strong> for real-time analysis via city networks.</li>
+                        <li>Integrated results into a road cleanliness scoring framework to visualize cleanliness levels.</li>
+                        <li>Enabled city administrators to prioritize cleanup operations efficiently based on real-time data.</li>
+                        <li>Reduced manual effort and optimized resource allocation for urban hygiene management.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section aria-labelledby="leadership">
+                <h2>Publications</h2>
+                <div class="rule" aria-hidden="true"></div>
+                <p>Presented a research paper titled ”Smart City Street Hygiene Monitoring with Mobile Edge Computing and Deep Learning”<strong>(IJMRR, March 2024).</strong></p>
+            </section>
+
+            <section aria-labelledby="certs">
+                <h2 id="certs">Certifications</h2>
+                <div class="rule" aria-hidden="true"></div>
+                <ul>
+                    <li>Full Stack Java Development–iHUB(2025)</li>
+                    <li>Data Analytics-Centum Foundation(2024)</li>
+                    <li>SQL and Relational Databases 101-Cognitive Class(2024)</li>
+                </ul>
+            </section>
+        </main>
+
+        <script>
+    // (Optional) Allow keyboard shortcuts: Ctrl/Cmd+P prints, Alt+Left goes back
+    // Browsers already support Ctrl/Cmd+P; no extra code needed.
+  </script> 
+  
+            <div class="actions-bottom" aria-label="Page actions">
+                <a href="https://yonosyshyd-prog.github.io/yonosysemp" class="btn">Back</a>
+                <button type="button" onclick="window.print()" aria-label="Print this profile">Print</button>
+            </div>
+    </body>
+</html>
