@@ -5,254 +5,154 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sarbeswar Palai - Portfolio</title>
   <style>
-    :root {
-      --accent1: #ff6f61;
-      --accent2: #6a5acd;
-      --accent3: #20b2aa;
-      --accent4: #ffcc00;
-      --text: #333;
-    }
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
     body {
-      background: linear-gradient(270deg, var(--accent1), var(--accent2), var(--accent3), var(--accent4));
-      background-size: 800% 800%;
-      animation: gradientBG 6s ease infinite; /* faster */
-      color: var(--text);
-      overflow-x: hidden;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f4f4f9;
+      color: #333;
     }
-    @keyframes gradientBG {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+    h1, h2, h3, h4 {
+      color: #2c3e50;
     }
-    header {
-      text-align: center;
-      padding: 50px 20px;
-      color: white;
-      position: relative;
-      background: rgba(0,0,0,0.4);
-      border-bottom: 3px solid rgba(255,255,255,0.3);
+    a {
+      color: #3498db;
+      text-decoration: none;
     }
-    header img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 15px;
-      animation: float 4s ease-in-out infinite;
+    a:hover {
+      text-decoration: underline;
     }
-    @keyframes float {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-12px); }
+    button {
+      margin: 5px;
+      padding: 10px 15px;
+      background-color: #3498db;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
     }
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    }
-    header p {
-      font-size: 1.2rem;
-      font-style: italic;
+    button:hover {
+      background-color: #2980b9;
     }
     section {
-      padding: 60px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    section h2 {
-      text-align: center;
-      margin-bottom: 30px;
-      font-size: 2rem;
-      color: white;
-      text-shadow: 1px 1px 4px rgba(0,0,0,0.6);
-      animation: fadeIn 1.2s ease;
-    }
-    .about, .skills, .projects, .contact {
-      background: rgba(255,255,255,0.85);
-      margin-bottom: 40px;
-      padding: 30px;
-      border-radius: 15px;
-      box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-      animation: slideUp 1.2s ease;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from { opacity: 0; transform: translateY(30px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-    .skills .bar {
-      background: #eee;
+      margin-bottom: 20px;
+      padding: 15px;
+      background: #fff;
       border-radius: 8px;
-      overflow: hidden;
-      margin: 15px 0;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
-    .skills .bar div {
-      height: 10px;
-      border-radius: 8px;
-      animation: progress 2s ease forwards; /* faster */
+    ul {
+      line-height: 1.6;
     }
-    @keyframes progress {
-      from { width: 0; }
-      to { width: var(--target); }
-    }
-    .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-    .project-card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-      transition: transform 0.3s, box-shadow 0.3s;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-    }
-    .project-card:hover {
-      transform: translateY(-8px) scale(1.02);
-      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
-    }
-    .project-card h3 {
-      margin-bottom: 10px;
-      color: var(--accent2);
-    }
-    .project-card p {
-      flex: 1;
-      margin-bottom: 15px;
-    }
-    .project-card button {
-      padding: 10px 14px;
-      border: none;
-      border-radius: 6px;
-      background: var(--accent3);
-      color: white;
-      font-weight: bold;
-      cursor: pointer;
-      transition: transform 0.3s, background 0.3s;
-    }
-    .project-card button:hover {
-      background: var(--accent1);
-      transform: scale(1.05);
-    }
-    .contact-info {
-      text-align: center;
-      font-size: 1.1rem;
-    }
-    .contact-info p {
-      margin: 10px 0;
-    }
-    .contact-info a {
-      color: var(--accent2);
-      text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
-    }
-    .contact-info a:hover {
-      color: var(--accent1);
-    }
-    .resume-btn {
-      display: inline-block;
+    .bottom-buttons {
       margin-top: 20px;
-      padding: 12px 20px;
-      border: none;
-      border-radius: 8px;
-      background: var(--accent2);
-      color: white;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      transition: background 0.3s, transform 0.3s;
-      text-decoration: none;
-    }
-    .resume-btn:hover {
-      background: var(--accent1);
-      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-  <header>
-    <img src="SarbeswarImage3.jpg" alt="Profile Photo">
-    <h1>Sarbeswar Palai</h1>
-    <p>Java Developer | Spring Boot Enthusiast</p>
-  </header>
+  <h1>Sarbeswar Palai</h1>
+  <h3>Java Full Stack Developer at Yonosys Technology Pvt Ltd (Aug 2024 – Present)</h3>
 
-  <section class="about">
-    <h2>About Me</h2>
-    <p>Hello! I'm Sarbeswar, a passionate Java Developer with hands-on experience in building scalable applications using Core Java, JDBC, Servlets, and Spring Boot. I love solving problems and bringing ideas to life with clean, efficient code.</p>
+  <section>
+    <h2>Professional Summary</h2>
+    <ul>
+      <li>Experienced in integrating web applications with relational databases such as MySQL and Oracle for smooth data handling.</li>
+      <li>Proficient in developing and maintaining Java-based web applications using Servlets, JSP, and JDBC.</li>
+      <li>Skilled in building and managing dynamic, user-friendly web applications.</li>
+      <li>Strong knowledge of the Software Development Life Cycle (SDLC).</li>
+      <li>Practical experience in delivering projects using the Agile methodology.</li>
+      <li>Good understanding of White-box and Black-box Testing techniques.</li>
+      <li>Hands-on experience in System Testing including Smoke, Retesting, Regression, and Sanity Testing.</li>
+      <li>Familiar with using JIRA for issue tracking, collaboration, and project management.</li>
+      <li>Comfortable working with SelectorsHub and TruePath for locator inspection and validation.</li>
+      <li>Experienced in handling Functional Requirement Specifications (FRS), Feature Requests (FR), Change Requests (CR), and Bugs.</li>
+      <li>Capable of writing unit test cases and ensuring functional accuracy.</li>
+      <li>Skilled in creating and maintaining Requirement Traceability Matrix (RTM) to ensure proper requirement coverage.</li>
+      <li>Proficient in managing GitHub repositories for version control and collaborative development.</li>
+      <li>Strong debugging skills to identify and resolve issues in Java-based applications.</li>
+      <li>Knowledgeable in deploying and managing applications on the Apache Tomcat server.</li>
+    </ul>
   </section>
 
-  <section class="skills">
-    <h2>Skills</h2>
-    <div class="bar"><div style="--target:85%; background: var(--accent1);"></div></div>
-    <p>Java - 85%</p>
-    <div class="bar"><div style="--target:78%; background: var(--accent2);"></div></div>
-    <p>Spring Boot - 78%</p>
-    <div class="bar"><div style="--target:70%; background: var(--accent3);"></div></div>
-    <p>J2EE - 70%</p>
-    <div class="bar"><div style="--target:75%; background: var(--accent4);"></div></div>
-    <p>SQL - 75%</p>
-    <div class="bar"><div style="--target:80%; background: var(--accent2);"></div></div>
-    <p>HTML - 80%</p>
-    <div class="bar"><div style="--target:75%; background: var(--accent3);"></div></div>
-    <p>CSS - 75%</p>
-    <div class="bar"><div style="--target:65%; background: var(--accent1);"></div></div>
-    <p>JavaScript - 65%</p>
+  <section>
+    <h2>Work Experience</h2>
+    <h3>Yonosys Technologies Pvt. Ltd. — Full Stack Java Developer</h3>
+    <p><i>Aug 2024 – Present · Hyderabad</i></p>
+    <ul>
+      <li>Proficient in analyzing requirements and understanding issue reports to identify root causes effectively.</li>
+      <li>Skilled in debugging, resolving issues, and writing comprehensive unit test cases.</li>
+      <li>Capable of thoroughly evaluating both functional and non-functional aspects of applications.</li>
+      <li>Developed and optimized backend services using Java, Spring Boot, MySQL, and Spring Security.</li>
+      <li>Designed and implemented RESTful APIs, integrating them with a frontend for seamless client–server communication.</li>
+      <li>Authored unit tests, conducted API testing using Postman, and efficiently tracked tasks using Jira.</li>
+      <li>Participated in corporate training on enterprise Java development and best practices.</li>
+      <li>Gained hands-on experience with enterprise Java patterns, database design, optimization, and testing methodologies.</li>
+    </ul>
   </section>
 
-  <section class="projects">
+  <section>
     <h2>Projects</h2>
-    <div class="projects-grid">
-      <div class="project-card">
-        <h3>Bus Ticket Counter</h3>
-        <p>A Java project to manage bus ticket booking and availability with JDBC.</p>
-        <button>View Project</button>
-      </div>
-      <div class="project-card">
-        <h3>Hotel Management System</h3>
-        <p>Comprehensive management system for hotel operations built using Java.</p>
-        <button>View Project</button>
-      </div>
-      <div class="project-card">
-        <h3>Car Showroom</h3>
-        <p>A Java + JDBC application for managing car sales and inventory.</p>
-        <button>View Project</button>
-      </div>
-    </div>
+    <ul>
+      <li>
+        <b>Stocksys Backend — September 2025</b><br>
+        Developed a robust backend REST API for a company website.<br>
+        Implemented secure authentication and authorization using Spring Security with JWT tokenization and validation.<br>
+        Designed and enforced role-based access control (RBAC).<br>
+        Engineered and optimized MySQL database schemas to ensure seamless API operations.
+      </li>
+      <li>
+        <b>E-Commerce Web Application — Feb 2025 – Apr 2025</b><br>
+        Built a full-stack e-commerce platform using Java, Spring Boot, JSP, and MySQL.<br>
+        Implemented features like product catalog, shopping cart, user authentication, and order management.<br>
+        Designed secure REST APIs for cart operations, payment integration, and checkout.<br>
+        Integrated GitHub for version control and Postman for API testing.
+      </li>
+      <li>
+        <b>Car Showroom Management System — Nov 2024 – Jan 2025</b><br>
+        Developed a web-based system using Java, JDBC, and Servlets to manage cars, customers, and sales.<br>
+        Implemented CRUD operations for vehicle inventory and customer records.<br>
+        Added billing and sales reporting features for smooth management.<br>
+        Focused on performance optimization and error handling for reliability.
+      </li>
+    </ul>
   </section>
 
-  <section class="contact">
-    <h2>Contact</h2>
-    <div class="contact-info">
-      <p>🌐 Company Website: <a href="https://www.yonosys.com" target="_blank">www.yonosys.com</a></p>
-      <p>📧 Company Email: <a href="mailto:info@yonosys.com">info@yonosys.com</a></p>
-      <a href="SarbeswarResume222.pdf" download>
-        <button style="
-          padding: 12px 20px;
-          border: none;
-          border-radius: 8px;
-          background: linear-gradient(90deg, #ff6a00, #ee0979);
-          color: #fff;
-          font-size: 1rem;
-          font-weight: bold;
-          cursor: pointer;
-          transition: transform 0.3s;
-        ">
-          📄 Download Resume
-        </button>
-      </a>
-    </div>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li><b>BCA</b> – Berhampur University (2021 – 2024)</li>
+      <li><b>+2 (Higher Secondary)</b> – Kandakhai Science College (2019 – 2021)</li>
+      <li><b>10th (Secondary)</b> – Panchayata High School Bajrakote (2019)</li>
+    </ul>
   </section>
+
+  <section>
+    <h2>Skills</h2>
+    <h4>Programming</h4>
+    <p>Java, JavaScript, HTML, CSS</p>
+
+    <h4>Frameworks & Libraries</h4>
+    <p>Spring Boot, React</p>
+
+    <h4>Databases</h4>
+    <p>PostgreSQL, MySQL, SQL Optimization</p>
+
+    <h4>Tools</h4>
+    <p>Git, GitHub, Maven, Docker</p>
+
+    <h4>Core Competencies</h4>
+    <p>API & Microservice Development, Database Schema Design & Optimization, gRPC, Kafka, DSA, Communication</p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <p>Company Website: <a href="https://yonosys.com" target="_blank">https://yonosys.com</a></p>
+    <p>Company Mail: <a href="mailto:info@yonosys.com">info@yonosys.com</a></p>
+  </section>
+
+  <div class="bottom-buttons">
+    <button onclick="window.location.href='https://yonosyshyd-prog.github.io/yonosysemp/'">Back</button>
+    <button onclick="window.print()">Print</button>
+    <a href="ResumeSarbeswar.pdf" download><button>Download Resume</button></a>
+  </div>
 </body>
 </html>
-
