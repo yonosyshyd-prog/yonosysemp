@@ -23,11 +23,31 @@
             background-color: white;
             padding: 40px 60px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            overflow: visible;
         }
 
         .header {
             text-align: center;
             margin-bottom: 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            flex-shrink: 0;
+            object-position: 25% 18%;
+        }
+
+        .header-content {
+            flex: 1;
+            text-align: center;
         }
 
         .header h1 {
@@ -59,11 +79,14 @@
             padding-bottom: 5px;
             margin-top: 25px;
             margin-bottom: 15px;
+            clear: both;
         }
 
         .content {
             font-size: 19px;
             line-height: 1.6;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
 
         .content ul {
@@ -72,16 +95,20 @@
 
         .content li {
             margin-bottom: 8px;
+            word-wrap: break-word;
         }
 
         .education-item, .experience-item, .project-item {
             margin-bottom: 15px;
+            clear: both;
+            overflow: hidden;
         }
 
         .education-item h3, .experience-item h3, .project-item h3 {
             font-size: 19px;
             font-weight: bold;
             margin-bottom: 2px;
+            word-wrap: break-word;
         }
 
         .education-item .details, .experience-item .details {
@@ -109,11 +136,13 @@
 
         .skills-section p {
             margin-bottom: 3px;
+            word-wrap: break-word;
         }
 
         .certification-item {
             margin-bottom: 8px;
             line-height: 1.6;
+            word-wrap: break-word;
         }
 
         .cert-name {
@@ -132,56 +161,70 @@
         }
 
         .print-button {
-		    text-align: center;
-		    margin-top: 30px;
-		}
+            text-align: center;
+            margin-top: 30px;
+        }
 
-		.print-button button {
-		    background-color: #333;
-		    color: white;
-		    padding: 12px 30px;
-		    font-size: 15px;
-		    border: none;
-		    cursor: pointer;
-		    border-radius: 4px;
-		    width: 180px;
-		}
+        .print-button button {
+            background-color: #007bff;
+            color: white;
+            padding: 12px 30px;
+            font-size: 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+            width: 180px;
+            margin: 0 5px;
+        }
 
-		.print-button button a {
-		    color: white;
-		    text-decoration: none;
-		    display: block;
-		}
+        .print-button button a {
+            color: white;
+            text-decoration: none;
+            display: block;
+        }
 
-		.print-button button:hover {
-		    background-color: #555;
-		}
+        .print-button button:hover {
+            background-color: #0056b3;
+        }
 
-		@media print {
-		    body {
-		        background-color: white;
-		        padding: 0;
-		    }
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
 
-		    .container {
-		        box-shadow: none;
-		        padding: 20px;
-		        max-width: 100%;
-		    }
+            .container {
+                box-shadow: none;
+                padding: 20px;
+                max-width: 100%;
+            }
 
-		    .print-button {
-		        display: none;
-		    }
-		}
+            .print-button {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+            }
+            
+            .profile-photo {
+                margin-bottom: 15px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="header">
-            <h1>Shivkumar Gadgi</h1>
-            <div class="location">📍 Hyderabad</div>
-            <div class="contact">
-                ✉ <a href="mailto:info@yonosys.com " style="text-decoration: none;">info@yonosys.com</a> 🌐 <a href="http://www.yonosys.com" style="text-decoration: none;">Yonosys.com</a>
+            <img src="ProfilePhoto.jpg" alt="Profile Photo" class="profile-photo">
+            <div class="header-content">
+                <h1>Shivkumar Gadgi</h1>
+                <div class="location">📍 Hyderabad</div>
+                <div class="contact">
+                    ✉ <a href="mailto:info@yonosys.com" style="text-decoration: none;">info@yonosys.com</a> 🌐 <a href="http://www.yonosys.com" style="text-decoration: none;">Yonosys.com</a>
+                </div>
             </div>
         </div>
 
@@ -199,9 +242,9 @@
         <div class="section-title">Technical Skills</div>
         <div class="content skills-section">
             <p><strong>Programming Languages:</strong> Java, HTML5, CSS3, JavaScript</p>
-            <p><strong>Frameworks:</strong> Spring Boot, Servlet, JSP, Bootstrap</p>
+            <p><strong>Frameworks:</strong> Spring Boot, Servlet/JSP, Bootstrap</p>
             <p><strong>Database:</strong> Oracle, SQL</p>
-            <p><strong>Tools:</strong> Git, GitHub, Jira</p>
+            <p><strong>Tools:</strong> Git, GitHub, Postman, Jira</p>
         </div>
 
         <div class="section-title">Experience</div>
@@ -210,22 +253,44 @@
                 <h3>⊳ Yonosys Tech Pvt. Ltd.<span class="year">Sept 2024 – Present</span></h3>
                 <div class="details">Full Stack Java Developer <span class="location">Hyderabad</span></div>
                 <ul style="margin-top: 10px;">
-                    <li>Built and optimized backend services using <strong>Java</strong>, <strong>Spring Boot</strong>, <strong>MySQL</strong>, and <strong>Spring Security</strong>.</li>
-                    <li>Developed <strong>RESTful APIs</strong> and integrated them with <strong>React</strong> frontend for seamless client-server communication.</li>
-                    <li>Used the <strong>Jira tool</strong> for issue tracking, task management, and team collaboration.</li>
-                    <li>Wrote and executed <strong>unit test cases</strong> performed <strong>API testing, debugging</strong>, and identified <strong>valid/invalid bugs</strong> to ensure high-quality, reliable applications.</li>
+                    <li><strong>Project:</strong> PMS (Progess Mapping System)</li>
+                    <li><strong>Role:</strong> Java Developer</li>
+                    <li><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
+                    <li><strong>Frameworks:</strong> SpringBoot</li>
+                    <li><strong>Database</strong> MySQL</li>
                 </ul>
-            </div>
+                 <div>
+                    <strong>▪ <u>Project Description:</u></strong>
+                </div>
+                <ul>
+                    <li>Developed a <strong>Progress Mapping System (PMS)</strong> to efficiently track and manage tasks and projects within the organization.</li>
+                    <li>Designed and implemented the backend using <strong>Spring Boot</strong> to handle APIs, data processing, and business logic.</li>
+                    <li>Created a responsive front-end using <strong>HTML, CSS, and JavaScript</strong> for intuitive user interaction and real-time updates.</li>
+                    <li>Managed data persistence and retrieval using <strong>MySQL database</strong> for storing project and task records securely.</li>
+                    <li>Implemented <strong>role-based access and modular architecture</strong> to ensure scalability and maintainability.</li>
+                    <li>Conducted thorough <strong>testing and validation of APIs</strong> and frontend functionality to ensure reliability and performance.</li>
+                    </ul>
+                <div>
+                    <strong>▪ <u>Roles & Responsibilities:</u></strong>
+                </div>
+                    <ul>
+                        <li>Requirement analysis and understanding of functional specifications.</li>
+                        <li>Designing and developing code for new FRS/FR/CR requests.</li>
+                        <li>Debugging and resolving application issues and defects.</li>
+                        <li>Creating and executing unit test cases to ensure code quality.</li>
+                        <li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.</li>
+                    </ul>
+                </div>
 
             <div class="experience-item clearfix">
                 <h3>⊳ Eazy Bytz Infotech<span class="year">Aug 2024 – Sept 2024</span></h3>
                 <div class="details">Full Stack Java Developer (1-month Internship)<span class="location">Remote</span></div>
                 <ul style="margin-top: 10px;">
                     <li>Built and optimized applications using <strong>Java</strong>, <strong>Spring Boot</strong> and <strong>MySQL</strong>.</li>
-					<li>Developed <strong>RESTful APIs</strong> optimized performance, and integrated them with <strong>HTML, CSS </strong>and <strong>JavaScript</strong> frontend for seamless client-server communication.</li>
-					<li>Developed and maintained <strong>Java-based web applications</strong> within <strong>cross-functional teams</strong> to deliver high-quality software solutions.</li>
-					<li>Worked with <strong>Postman</strong> for API testing to streamline the development workflow.</li>
-					<li>Improved API response time and application scalability through <strong>performance tuning</strong> and <strong>query optimization</strong>.</li>
+                    <li>Developed <strong>RESTful APIs</strong> optimized performance, and integrated them with <strong>HTML, CSS </strong>and <strong>JavaScript</strong> frontend for seamless client-server communication.</li>
+                    <li>Developed and maintained <strong>Java-based web applications</strong> within <strong>cross-functional teams</strong> to deliver high-quality software solutions.</li>
+                    <li>Worked with <strong>Postman</strong> for API testing to streamline the development workflow.</li>
+                    <li>Improved API response time and application scalability through <strong>performance tuning</strong> and <strong>query optimization</strong>.</li>
                 </ul>
             </div>
         </div>
@@ -248,10 +313,10 @@
                 <h3>➣ Paying Guest Accommodation System</h3>
                 <ul style="margin-top: 10px;">
                     <li>Developed a comprehensive <strong>Paying Guest Accommodation System</strong> to streamline property and tenant management for landlords and renters.</li>
-					<li>Built the front-end with <strong>HTML/CSS</strong> to deliver an engaging and responsive user interface.</li>
-					<li>Designed and implemented <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> for seamless data exchange between client and server.</li>
-					<li>Performed <strong>API testing</strong> with <strong>Postman</strong> to validate endpoints and ensure system reliability.</li>
-					<li>Utilized <strong>Spring Data JPA</strong> to manage database operations efficiently within the persistence layer.</li>
+                    <li>Built the front-end with <strong>HTML/CSS</strong> to deliver an engaging and responsive user interface.</li>
+                    <li>Designed and implemented <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> for seamless data exchange between client and server.</li>
+                    <li>Performed <strong>API testing</strong> with <strong>Postman</strong> to validate endpoints and ensure system reliability.</li>
+                    <li>Utilized <strong>Spring Data JPA</strong> to manage database operations efficiently within the persistence layer.</li>
                 </ul>
             </div>
 
@@ -259,11 +324,11 @@
                 <h3>➣ Hostel Leave Application</h3>
                 <ul style="margin-top: 10px;">
                     <li>Developed a <strong>Hostel Leave Application System</strong> to streamline the leave request process for hostel students.</li>
-					<li>Designed a simple and intuitive interface for students to submit leave applications easily.</li>
-					<li>Implemented <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> for efficient communication between front-end and back-end.</li>
-					<li>Conducted <strong>API testing</strong> with <strong>Postman</strong> to ensure reliability and proper functionality.</li>
-					<li>Created the persistence layer with <strong>Spring Data JPA</strong> to manage leave request records effectively.</li>
-					<li>Configured environment-specific settings using <strong>application.yml</strong> for seamless deployment.</li>
+                    <li>Designed a simple and intuitive interface for students to submit leave applications easily.</li>
+                    <li>Implemented <strong>RESTful APIs</strong> using <strong>Spring Boot</strong> for efficient communication between front-end and back-end.</li>
+                    <li>Conducted <strong>API testing</strong> with <strong>Postman</strong> to ensure reliability and proper functionality.</li>
+                    <li>Created the persistence layer with <strong>Spring Data JPA</strong> to manage leave request records effectively.</li>
+                    <li>Configured environment-specific settings using <strong>application.yml</strong> for seamless deployment.</li>
                 </ul>
             </div>
         </div>
@@ -287,24 +352,24 @@
         </div>
 
         <div class="section-title">Certifications</div>
-		<div class="content">
-		    <div class="certification-item">
-		        <span class="cert-name">Full Stack Java Development Course</span>
-		        <span class="cert-provider">⎼ iHub Talent Info Systems</span>
-		    </div>
-		    <div class="certification-item">
-		        <span class="cert-name">Data Structure and Object Oriented Programming</span>
-		        <span class="cert-provider">⎼ APT TECH</span>
-		    </div>
-		    <div class="certification-item">
-		        <span class="cert-name">Programming Fundamentals</span>
-		        <span class="cert-provider">⎼ Duke University/Coursera</span>
-		    </div>
-		    <div class="certification-item">
-		        <span class="cert-name">Career Edge Knockdown the Lockdown</span>
-		        <span class="cert-provider">⎼ TCS iON</span>
-		    </div>
-		</div>
+        <div class="content">
+            <div class="certification-item">
+                <span class="cert-name">Full Stack Java Development Course</span>
+                <span class="cert-provider">⎼ iHub Talent Info Systems</span>
+            </div>
+            <div class="certification-item">
+                <span class="cert-name">Data Structure and Object Oriented Programming</span>
+                <span class="cert-provider">⎼ APT TECH</span>
+            </div>
+            <div class="certification-item">
+                <span class="cert-name">Programming Fundamentals</span>
+                <span class="cert-provider">⎼ Duke University/Coursera</span>
+            </div>
+            <div class="certification-item">
+                <span class="cert-name">Career Edge Knockdown the Lockdown</span>
+                <span class="cert-provider">⎼ TCS iON</span>
+            </div>
+        </div>
 
         <div class="signature">
             <div style="margin-top: 50px;">
@@ -314,9 +379,8 @@
     </div>
 
     <div class="print-button">
-        <button onclick="window.print()">Print</button>
-        <button><a class="nav-link" href="#" onclick="window.location.href='https://yonosyshyd-prog.github.io/yonosysemp/'; return false;">Back</a></button>
+        <button onclick="window.print()"><strong>Print</strong></button>
+        <button><a class="nav-link" href="#" onclick="window.location.href='https://yonosyshyd-prog.github.io/yonosysemp/'; return false;"><strong>Back</strong></a></button>
     </div>
 </body>
 </html>
-
