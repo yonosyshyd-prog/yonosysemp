@@ -54,6 +54,15 @@
       transform: translateY(0);
       box-shadow: none;
     }
+    
+    a.visited {
+      background: #7c7b87;
+      color: #ecf0f1;
+    }
+
+    a.visited:hover {
+      background: #9b99bf;
+    }
 
     p {
       margin-top: 40px;
@@ -74,22 +83,34 @@
       <img src="https://www.yonosys.com/assets/images/logo.png" height="150px" width="520px" alt="logo"></h1>
     <h2>Full Stack Java Developers</h2><br><br>
 
-    <a href="Shreya%20Resume/ShreyaProfile.html">Shreya Miryala</a>
-    <a href="guna/portfolio.html">Thirupathi Reddy Puli</a>
-    <a href="Prasanna%20Resume/resume.html">Prasanna Kethireddy</a>
-    <a href="Gayathri%20Resume/GayathriProfile.html">Gayathri Thallapalli</a>
-    <a href="Radhika%20Profile/index.html">Radhika Gopiseti</a>
-    <a href="SarbeswarFolder/MyProfile.html">Sarbeswar Palai</a>
-    <a href="shrijit-profile/website.html">Shrijit Das</a>
-    <a href="Tushar%20Resume/TusharProfile.html">Thakur Tushar Singh</a>
-    <a href="Naveen-profile/Azmeera%20Naveen%20-%20Resume.html">Naveen Azmeera</a>
-    <a href="RAM-PORTFOLIO/portfolio.html">Ram Charan</a>
-    <a href="sindhu_portfolio/main1.html">Sindhu Nagalla</a>
-    <a href="Meghana%20Resume/meghana%20resume.html">Meghana Kolla</a>
-    <a href="Shivkumar/index.html">Shivkumar Gadgi</a>
-    <a href="Pooja-Portfolio/p.html">Pooja Ojha</a>
-    <a href="Sushma-Profile/sushma.html">Sushma Golla</a>
+    <a href="Shreya%20Resume/ShreyaProfile.html" class="profile-link" target="_blank">Shreya Miryala</a>
+    <a href="guna/portfolio.html" class="profile-link" target="_blank">Thirupathi Reddy Puli</a>
+    <a href="Prasanna%20Resume/resume.html" class="profile-link" target="_blank">Prasanna Kethireddy</a>
+    <a href="Gayathri%20Resume/GayathriProfile.html" class="profile-link" target="_blank">Gayathri Thallapalli</a>
+    <a href="Radhika%20Profile/index.html" class="profile-link" target="_blank">Radhika Gopiseti</a>
+    <a href="SarbeswarFolder/MyProfile.html" class="profile-link" target="_blank">Sarbeswar Palai</a>
+    <a href="shrijit-profile/website.html" class="profile-link" target="_blank">Shrijit Das</a>
+    <a href="Tushar%20Resume/TusharProfile.html" class="profile-link" target="_blank">Thakur Tushar Singh</a>
+    <a href="Naveen-profile/Azmeera%20Naveen%20-%20Resume.html" class="profile-link" target="_blank">Naveen Azmeera</a>
+    <a href="RAM-PORTFOLIO/portfolio.html" class="profile-link" target="_blank">Ram Charan</a>
+    <a href="sindhu_portfolio/main1.html" class="profile-link" target="_blank">Sindhu Nagalla</a>
+    <a href="Meghana%20Resume/meghana%20resume.html" class="profile-link" target="_blank">Meghana Kolla</a>
+    <a href="Shivkumar/index.html" class="profile-link" target="_blank">Shivkumar Gadgi</a>
+    <a href="Pooja-Portfolio/p.html" class="profile-link">Pooja Ojha</a>
+    <a href="Sushma-Profile/sushma.html" class="profile-link" target="_blank">Sushma Golla</a>
     <br><br>
   </center>
+  
+  <script>
+    const links = document.querySelectorAll('.profile-link');
+    
+    const visitedLinks = new Set();
+    
+    links.forEach(link => {
+      link.addEventListener('click', function() {
+        this.classList.add('visited');
+      });
+    });
+  </script>
 </body>
 </html>
