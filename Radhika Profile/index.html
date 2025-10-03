@@ -1,138 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radhika's profile</title>
-    <style>
-        .container {
-  text-align: center;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  width: 500px;
-  margin: 30px auto;
-  background: #89f7fe;
-}
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+      margin: 30px;
+      line-height: 1.3;
+      font-size: 14px;
+      color: #222;
+      background: #f7f9fa;
+    }
 
-    .circle-img {
+    h1, h2, h3, h4, h5, h6, a, ul, ol, li, table, th, td, .section-title {
+      font-family: 'Segoe UI', Arial, Helvetica, sans-serif !important;
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .header img {
+  width: 240px;
+  height: 240px;
   border-radius: 50%;
-  width: 200px;
-  height: 200px;
+  margin-right: 32px;
   object-fit: cover;
-  border: 5px solid #fff;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-}
-.section-box {
-  background-color: #f9f9f9;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  background: #89f7fe;
-    width: 500px;
-  margin: 30px auto;
-}
+    }
 
-.section-box p {
-  font-size: 16px;
-  margin-bottom: 10px;
-  
-}
+    .header-text h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 1px;
+      color: #1a237e;
+    }
 
-.section-box strong {
-  font-weight: bold;
-  color: #333;
-}
+    .header-text h2 {
+      margin: 8px 0 0 0;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: #444;
+    }
 
-h3 {
-  font-size: 24px;
-  margin-bottom: 10px;
-  color: #337ab7;
-  }
+    .header-text a {
+      color: #0078d4;
+      text-decoration: none;
+      margin-right: 18px;
+      font-size: 1rem;
+    }
 
-  
-.resume-btn {
+    .section-title {
+      font-size: 1.4rem;
+      font-weight: 600;
+      margin-top: 32px;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #1565c0;
+      padding-bottom: 6px;
+      color: #1565c0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #1565c0;
+    }
+    .project-heading {
+      color: #1565c0 !important;
+    }
 
-background-color:  #89f7fe;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  width: 300px;
-  margin: 40px auto;
-  
-  margin: 20px auto;
-  display: block;
-  width: fit-content;
-}
+    ul {
+      margin-top: 10px;
+      margin-bottom: 0;
+      padding-left: 24px;
+    }
+    ul li {
+      margin-bottom: 8px;
+      font-size: 1rem;
+      line-height: 1.7;
+    }
 
-
-
-
-
-
-    </style>
+    b {
+      font-weight: 600;
+      color: #263238;
+    }
+  </style>
 </head>
 <body>
+  <!-- ...existing code... -->
 
-     <div class="container">
-    <!-- Profile -->
-    <img src="radhika.jpg" alt="Profile" class="circle-img" height="200">
-    <h2>Gopiseti Radhika</h2>
-    <p><b>DOB:</b> 27 April 2002</p><br>
-    <p><b>Email : </b><a href="mailto:radhikagopisetti270402@gmail.com"> Radhikagopisetti270402@gmail.com</a></p>
-    <p><b>Phone:</b> 8790463352</p></div>
-
-   
-    
-    <!-- Education -->
-       </fieldset>
-    <h3 style="text-align: center;">🎓 Education Details</h3>
-    <div class="section-box">
-      <p><strong>B.Tech:</strong> Elecronic and CommunicatioN Engineering <br>
-         Vasireddy Venkatadri Institution Of Technology (2021–2025)</p>
-      <p><strong>MPC:</strong> Narayana Junior College (2018–2020)</p>
-      <p><strong>SSC:</strong> Sravanthi High School(2018)</p>
+  <!-- Header Section -->
+  <div class="header">
+  <img src="1374a755-8b4f-4a7a-8d66-27cc2048e915.jpeg" alt="Profile Picture" style="width:120px; height:120px; border-radius:50%; object-fit:cover; object-position:center top;">
+    <div class="header-text">
+      <h1>GOPISETTI RADHIKA</h1>
+      <h2>Java Full-Stack Developer</h2>
+      <div style="display:flex; align-items:center; gap:18px; margin-top:8px;">
+        <span style="font-size:1rem; color:#0078d4; vertical-align:middle; display:flex; align-items:center;">
+          <span style="font-size:1.1rem; margin-right:4px; color:#0078d4;">📍</span>Hyderabad, India
+        </span>
+        <a href="mailto:info@yonosys.com" style="color:#0078d4; text-decoration:none;">info@yonosys.com</a>
+        <a href="http://www.yonosys.com" target="_blank" style="color:#0078d4; text-decoration:none;">www.yonosys.com</a>
+      </div>
     </div>
-    </fieldset>
-
-
-    <!-- Skills -->
-    <h3  style="text-align: center;">💻 Technical Skills</h3>
-    <div class="section-box">
-      <p>Java | HTML | CSS|Javascript</p>
-    </div>
-
-    <!-- Projects -->
-    <h3  style="text-align: center;">📂 Projects</h3>
-    <div class="section-box">
-      <ul>
-        <li>Automatic Plant Watering System Using Arduino</li>
-        <li> Lung Cancer prediction using CNNs and Transfer Learning</li>
-        
-      </ul>
-      
-    </div>
-     
-      <!-- Resume view Button -->
-    <a style="align-items: center;" 
-   href="https://drive.google.com/file/d/1yhIEg5IzJBjGd8klZX1J5sNK1xqwbwKR/view?usp=sharing" 
-   target="_blank" 
-   class="resume-btn">
-   View My Resume
-</a>
-
   </div>
-</body>
-    
-</body>
 
+  <!-- Professional Summary -->
+  <div>
+    <div class="section-title">Professional Summary</div>
+  <ul style="margin-left:0; padding-left:20px; text-align:left;">
+      <li>Hands-on experience developing dynamic web-based applications using the <b>MVC</b>.</li>
+      <li>Strong understanding of the <b>Software Development Life Cycle (SDLC)</b>.</li>
+      <li>Experienced in developing and delivering projects using the <b>Agile model</b>.</li>
+      <li>Proficient in handling <b>Functional Requirement Specifications (FRS)</b>, <b>Feature Requests (FR)</b>, <b>Change Requests (CR)</b>, and <b>bug management</b>.</li>
+      <li>Experienced in writing <b>Unit Test Cases</b> and maintaining comprehensive test coverage.</li>
+      <li>Proficient with issue tracking and project management tools such as <b>Jira</b> for collaboration and task tracking.</li>
+      <li>Experienced in managing <b>GitHub</b> repositories for version control and collaborative development.</li>
+      <li>Comfortable inspecting and validating locators using tools like <b>SelectorsHub</b> and <b>TruePath</b>.</li>
+      <li>Solid knowledge of <b>White-box</b> and <b>Black-box Testing</b> techniques.</li>
+      <li>Expertise in <b>System Testing</b>, including <b>Smoke</b>, <b>Retesting</b>, <b>Regression</b>, and <b>Sanity Testing</b>.</li>
+      <li>Able to design and maintain a <b>Traceability Matrix</b> to ensure complete requirements validation.</li>
+    </ul>
+  </div>
+
+    <!-- Educational Details -->
+    <div>
+      <div class="section-title">Educational Details</div>
+      <table style="width:100%; border-collapse:collapse;">
+        <tr>
+          <th style="text-align:left; padding:6px 4px; border-bottom:2px solid #000; line-height:1.2;">Institution & Degree</th>
+          <th style="text-align:left; padding:6px 4px; border-bottom:2px solid #000; line-height:1.2;">Year</th>
+          <th style="text-align:left; padding:6px 4px; border-bottom:2px solid #000; line-height:1.2;">CGPA</th>
+          <th style="text-align:left; padding:6px 4px; border-bottom:2px solid #000; line-height:1.2;">Location</th>
+        </tr>
+        <tr>
+          <td style="padding:6px 4px; line-height:1.2;"><b>Vasireddy Venkatadri Insitution of Technology</b><br>B.Tech, Electronics & Communication Engineering</td>
+          <td style="padding:6px 4px; line-height:1.2;">2021 – 2025</td>
+          <td style="padding:6px 4px; line-height:1.2;">7.99</td>
+          <td style="padding:6px 4px; line-height:1.2;">Guntur</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 4px; line-height:1.2;"><b>Narayana Junior College</b><br>Intermediate (MPC)</td>
+          <td style="padding:6px 4px; line-height:1.2;">2018 – 2020</td>
+          <td style="padding:6px 4px; line-height:1.2;">9.7</td>
+          <td style="padding:6px 4px; line-height:1.2;">Nidamanuru</td>
+        </tr>
+        <tr>
+          <td style="padding:6px 4px; line-height:1.2;"><b>Sravanthi High School</b><br>SSC</td>
+          <td style="padding:6px 4px; line-height:1.2;">2017 – 2018</td>
+          <td style="padding:6px 4px; line-height:1.2;">9.8</td>
+          <td style="padding:6px 4px; line-height:1.2;">Gannavaram</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Technical Skills -->
+    <div>
+      <div class="section-title">Technical Skills</div>
+  <ul style="margin-left:0; padding-left:20px; text-align:left;">
+        <li><b>Programming Languages:</b> Java, Python, C</li>
+        <li><b>Web Technologies:</b> HTML, CSS, JavaScript</li>
+        <li><b>Frameworks:</b> Spring Boot</li>
+        <li><b>Databases:</b> MySQL</li>
+        <li><b>Tools:</b> Git, Jira, Eclipse, VS Code</li>
+        <li><b>Operating Systems:</b> Windows, Linux</li>
+      </ul>
+          <!-- Work Experience -->
+          <div>
+            <div class="section-title" style="font-size: 28px; font-weight: bold;">Work Experience:</div>
+        <div class="project-heading" style="font-size: 20px; font-weight: bold; margin-top: 10px;">Yonosys Technologies Pvt Ltd (Aug 2025 – Present)</div>
+            <ul style="margin-left:0; padding-left:20px; text-align:left;">
+              <li><b>Project:</b> PMS (Progress Mapping System)</li>
+              <li><b>Role:</b> Java Developer</li>
+              <li><b>Languages:</b> Java, HTML, CSS, JavaScript</li>
+              <li><b>Frameworks:</b> Spring Boot</li>
+              <li><b>Database:</b> MySQL</li>
+            </ul>
+            <!-- Project Description -->
+            <div style="margin-top: 30px;">
+              <div class="project-heading" style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Project Description</div>
+              <ul style="margin-left:0; padding-left:20px; text-align:left;">
+                <li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.</li>
+                <li>Designed and implemented the backend using Spring Boot to handle APIs, data processing, and business logic.</li>
+                <li>Created a responsive front-end using HTML, CSS, and JavaScript for intuitive user interaction and real-time updates.</li>
+                <li>Managed data persistence and retrieval using MySQL database for storing project and task records securely.</li>
+                <li>Implemented role-based access and modular architecture to ensure scalability and maintainability.</li>
+                <li>Conducted thorough testing and validation of APIs and frontend functionality to ensure reliability and performance.</li>
+              </ul>
+            </div>
+
+            <!-- Roles & Responsibilities -->
+            <div style="margin-top: 30px;">
+              <div class="project-heading" style="font-size: 20px; font-weight: bold; margin-bottom: 10px;">Roles & Responsibilities</div>
+              <ul style="margin-left:0; padding-left:20px; text-align:left;">
+                <li>Requirement analysis and understanding of functional specifications.</li>
+                <li>Designing and developing code for new FRS/FR/CR requests.</li>
+                <li>Debugging and resolving application issues and defects.</li>
+                <li>Creating and executing unit test cases to ensure code quality.</li>
+                <li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.</li>
+              </ul>
+            </div>
+
+            <!-- Additional Projects -->
+            <div style="margin-top: 30px;">
+              <div class="section-title">Projects</div>
+              <div class="project-heading" style="font-size:18px; font-weight:bold; margin-top:15px;">Automatic Plant Watering System Using Arduino</div>
+              <div style="margin-left:20px;">
+                Collaborated in a team of three to design a model of Automatic Plant Watering System using Arduino (SOLIDWORKS).
+                <ul>
+                  <li>An Automatic Plant Watering System using Arduino monitors soil moisture and automatically waters plants when needed, conserving water and preventing overwatering.</li>
+                  <li>This is achieved by using a soil moisture sensor to detect dryness, triggering a water pump or valve to deliver water to the plant when the soil moisture level drops below a set threshold.</li>
+                </ul>
+              </div>
+        <div class="project-heading" style="font-size:18px; font-weight:bold; margin-top:15px;">Lung Cancer prediction using CNNs and Transfer Learning</div>
+              <div style="margin-left:20px;">
+                Led a team of four to design and develop a lung cancer prediction system using CNNs and Transfer Learning.
+                <ul>
+                  <li>A sophisticated approach that leverages the strengths of deep learning and transfer learning to accurately predict lung cancer from computed tomography (CT) scans.</li>
+                </ul>
+              </div>
+              <!-- Certifications -->
+              <div style="margin-top: 30px;">
+                <div class="section-title">Certifications</div>
+                <ul style="margin-left:0; padding-left:20px; text-align:left;">
+                  <li>Python for Everybody – Coursera, 2024</li>
+                  <li>Robotic proccess Automation  – AICTE, 2023</li>
+                  
+                </ul>
+              </div>
+            <!-- Certifications -->
+            </div>
+          </div>
+    </div>
+
+</body>
+  <div style="display: flex; gap: 32px; margin-top: 40px; justify-content: center;">
+    <button onclick="window.history.back()" style="background: #1a237e; color: #fff; border: none; border-radius: 10px; padding: 16px 36px; font-size: 1.2rem; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+      <span style="font-size: 1.3rem;">&#8592;</span> Back
+    </button>
+    <button onclick="window.print()" style="background: #1a237e; color: #fff; border: none; border-radius: 10px; padding: 16px 36px; font-size: 1.2rem; font-weight: 500; cursor: pointer; display: flex; align-items: center; gap: 8px;">
+      <span style="font-size: 1.3rem;">&#128424;</span> Print Resume
+    </button>
+  </div>
 </html>
+
+
 
 
 
