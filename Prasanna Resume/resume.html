@@ -3,121 +3,185 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Kethireddy Prasanna</title>
+  <title>Kethireddy Siva Sai Lakshmi Prasanna - Resume</title>
   <style>
-    body { font-family: "Times New Roman", Times, serif; margin:0; padding:0; color:#000; background:#fff; line-height:1.4; }
-    .container { padding:16px; max-width:800px; margin:auto; }
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      color: #000;
+      background: #fff;
+      line-height: 1.5;
+    }
+    .container {
+      max-width: 850px;
+      margin: auto;
+      padding: 20px;
+    }
+    header {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+      font-weight: 900;
+    }
+    header p {
+      margin: 4px 0;
+    }
+    header a {
+      color: #000;
+      text-decoration: none;
+      border-bottom: 1px dotted #000;
+    }
+    h2 {
+      font-size: 20px;
+      margin: 18px 0 8px;
+      padding-bottom: 4px;
+      text-transform: uppercase;
+      border-bottom: 1px solid #000;
+      width: 100%;
+      display: block;
+    }
+    ul {
+      margin: 6px 0 0 20px;
+    }
+    li {
+      margin: 4px 0;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
+    .sub {
+      display: flex;
+      justify-content: space-between;
+      font-style: italic;
+      font-size: 14px;
+    }
+    .company {
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .section {
+      margin-bottom: 16px;
+    }
+    .profile-photo {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+    .profile-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-    header { display:flex; gap:40px; align-items:center; }
-    header h1 { margin:0; font-size:28px; font-weight:900; }
-    header .role { font-size:18px; font-weight:600; }
-    .contact a { color:inherit; text-decoration:none; border-bottom:1px dotted #000; }
-
-    h2 { font-size:1.3rem; margin:16px 0 8px; font-weight:bold; text-transform:capitalize; }
-    .rule { height:1px; background:#000; margin:8px 0 12px; }
-
-    ul { margin:6px 0 0 18px; }
-    li { margin:4px 0; }
-    .block { margin-bottom:12px; }
-    .row-1 { display:flex; justify-content:space-between; font-weight:600; }
-    .row-2 { display:flex; justify-content:space-between; font-style:italic; }
-
-    .company-name { font-weight:900; font-size:18px; }
-    .project-details ul { list-style-type:square; }
+    /* Ensure all section lines align to same width */
+    section.section {
+      border-bottom: none;
+      width: 100%;
+    }
 
     /* Print-friendly */
     @page { size:A4; margin:14mm; }
     @media print { .actions { display:none !important; } }
+
     .actions-bottom {
-  display: flex;
-  gap: 15px;
-  justify-content: center; /* Center align */
-  margin-top: 20px;
-}
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
 
-.actions-bottom .btn,
-.actions-bottom button {
-  background-color: white;       /* White background */
-  color: #007bff;                /* Blue text */
-  padding: 10px 20px;
-  border: 2px solid #007bff;     /* Blue border */
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
+    .actions-bottom .btn,
+    .actions-bottom button {
+      background-color: white;
+      color: #007bff;
+      padding: 10px 20px;
+      border: 2px solid #007bff;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
 
-.actions-bottom .btn:hover,
-.actions-bottom button:hover {
-  background-color: #007bff;   /* Blue on hover */
-  color: white;                /* White text on hover */
-}
+    .actions-bottom .btn:hover,
+    .actions-bottom button:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+      border-bottom: 1px dotted #000;
+    }
   </style>
 </head>
 <body>
   <main class="container">
     <header>
-      <div class="profile-photo" style="width:120px;height:120px;border-radius:50%;overflow:hidden;">
-        <img src="Prasanna.jpeg" alt="Profile Photo" style="width:100%;height:100%;object-fit:cover;" />
+      <div class="profile-photo">
+        <img src="Prasanna.jpeg" alt="Profile Photo" />
       </div>
-      
-        <div class="contact">
-          <h1 style="font-size: 28px; font-weight: 900;">Kethireddy Siva Sai Lakshmi Prasanna</h1>
-                        <p class="role" style="font-size: 18px; font-weight: 600;">Java Full-Stack Developer</p>
-                        <a href="mailto:info@yonosys.com" style="font-size: 16px;">info@yonosys.com</a>&nbsp; &nbsp; &nbsp;
-                        <a href="https://www.yonosys.com" style="font-size: 16px;">www.yonosys.com</a><br>
-
-        </div>
-      
+      <div class="contact">
+        <h1 style="font-size: 28px; font-weight: 900;">Kethireddy Siva Sai Lakshmi Prasanna</h1>
+        <p class="role" style="font-size: 18px; font-weight: 600;">Java Full-Stack Developer</p>
+        <a href="mailto:info@yonosys.com" style="font-size: 16px;">info@yonosys.com</a>&nbsp; &nbsp; &nbsp;
+        <a href="https://www.yonosys.com" style="font-size: 16px;">www.yonosys.com</a><br>
+      </div>
     </header>
 
-    <!-- Summary -->
-    <section>
+    <section class="section">
       <h2>Professional Summary</h2>
-      <div class="rule"></div>
       <ul>
-        <li>Hands-on experience developing dynamic web-based applications using the <strong>MVC.</strong></li>
-  <li>Strong understanding of the <strong>Software Development Life Cycle (SDLC).</strong></li>
-  <li>Experienced in developing and delivering projects using the <strong>Agile model.</strong> </li>
-  <li>Proficient in handling <strong>Functional Requirement Specifications (FRS), Feature Requests (FR), Change Requests (CR),</strong> and <strong>bug management.</strong></li>
-  <li>Experienced in writing <strong>Unit Test Cases</strong> and maintaining comprehensive test coverage.</li>
-  <li>Proficient with issue tracking and project management tools such as <strong>Jira</strong> for collaboration and task tracking.</li>
-  <li>Experienced in managing <strong>GitHub</strong> repositories for version control and collaborative development.</li>
-  <li>Comfortable inspecting and validating locators using tools like <strong>SelectorsHub</strong> and <strong>TruePath.</strong></li>
-
-  <!-- Testing-focused skills -->
-  <li>Solid knowledge of <strong>White-box</strong> and <strong>Black-box Testing</strong> techniques.</li>
-  <li>Expertise in <strong>System Testing,</strong> including <strong>Smoke, Retesting, Regression,</strong> and <strong>Sanity Testing.</strong></li>
-  <li>Able to design and maintain a <strong>Traceability Matrix</strong> to ensure complete requirements validation.</li>
-
+        <li>Hands-on experience developing dynamic web-based applications using the <strong>MVC</strong>.</li>
+        <li>Strong understanding of the <strong>Software Development Life Cycle (SDLC)</strong>.</li>
+        <li>Experienced in developing and delivering projects using the <strong>Agile model</strong>.</li>
+        <li>Proficient in handling <strong>FRS, FR, CR</strong> requests and bug management.</li>
+        <li>Skilled in writing <strong>Unit Test Cases</strong> and maintaining test coverage.</li>
+        <li>Proficient with <strong>Jira</strong> for collaboration and tracking tasks.</li>
+        <li>Experienced in managing <strong>GitHub</strong> repositories for version control.</li>
+        <li>Comfortable inspecting locators using tools like <strong>SelectorsHub</strong> and <strong>TruePath</strong>.</li>
+        <li>Knowledge of <strong>White-box</strong> and <strong>Black-box Testing</strong>.</li>
+        <li>Expertise in <strong>System Testing</strong>: Smoke, Regression, Sanity, and Retesting.</li>
+        <li>Able to design and maintain a <strong>Traceability Matrix</strong> for requirements validation.</li>
       </ul>
     </section>
 
-    <!-- Education -->
-    <section>
+    <section class="section">
       <h2>Education</h2>
-      <div class="rule"></div>
-      <div class="block">
-        <div class="row-1"><div>B.Tech, Computer Science & Engineering — RGUKT Nuzvid</div><div>2021 – 2025</div></div>
-        <div class="row-2"><div>CGPA: 8.61</div><div>Andhra Pradesh</div></div>
-      </div>
-      <div class="block">
-        <div class="row-1"><div>PUC — RGUKT Nuzvid</div><div>2019 – 2021</div></div>
-        <div class="row-2"><div>CGPA: 9.18</div><div>Andhra Pradesh</div></div>
-      </div>
-      <div class="block">
-        <div class="row-1"><div>SSC — Z.P High School, Golugonda</div><div>2018 – 2019</div></div>
-        <div class="row-2"><div>CGPA: 10</div><div>Andhra Pradesh</div></div>
-      </div>
+      <div class="row"><div>B.Tech in CSE - RGUKT Nuzvid</div><div>2021 – 2025</div></div>
+      <div class="sub"><div>CGPA: 8.6</div><div>Andhra Pradesh</div></div>
+      <div class="row"><div>PUC - RGUKT Nuzvid</div><div>2019 – 2021</div></div>
+      <div class="sub"><div>CGPA: 9.2</div><div>Andhra Pradesh</div></div>
+      <div class="row"><div>SSC - Z.P.H School, A.L. Puram</div><div>2018 – 2019</div></div>
+      <div class="sub"><div>CGPA: 10</div><div>Andhra Pradesh</div></div>
     </section>
 
-    <!-- Experience -->
-    <section>
+    <section class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python, Java, HTML, CSS, JavaScript, SQL (MySQL, PostgreSQL)</li>
+        <li><strong>Libraries:</strong> React.js, NumPy, Pandas</li>
+        <li><strong>Frameworks & Tools:</strong> FastAPI, GitHub, MS Office, UNIX</li>
+        <li><strong>Coursework:</strong> DSA, OOPS, DBMS, OS</li>
+        <li><strong>Soft Skills:</strong> Problem Solving, Time Management, Leadership</li>
+      </ul>
+    </section>
+
+    <section class="section">
       <h2>Experience</h2>
-      <div class="rule"></div>
       <div class="block">
-        <div class="row-1"><div class="company-name">Maang Technologies Pvt. Ltd</div><div>Dec 2023 – Dec 2024 (Remote)</div></div>
+        <div class="row"><div class="company"><b>Maang Technologies Pvt. Ltd</b></div><div>Dec 2023 – Dec 2024 (Remote)</div></div>
         <ul>
           <li>Developed dynamic web apps using HTML, CSS, JavaScript, React.js.</li>
           <li>Enhanced backend with Python, FastAPI, SQL for scalable solutions.</li>
@@ -125,96 +189,81 @@
         </ul>
       </div>
       <div class="block">
-        <div class="row-1"><div class="company-name">Edubot Software & Services</div><div>May 2024 – Jun 2024 (On-site)</div></div>
+        <div class="row"><div class="company"><b>Edubot Software & Services</b></div><div>May 2024 – Jun 2024 (On-site)</div></div>
         <ul>
           <li>Worked on “Advanced Visa Processing System” project using Java & Swing.</li>
         </ul>
       </div>
       <div class="block">
-                   <div class="row-1">
-                    <div class="company-name">Yonosys Technologies Pvt. Ltd</div>
-
-                        <div>Aug 2024 – Present · Hyderabad</div>
-                    </div>
-                    <div class="project-details">
-  <ul>
-    <li><strong>Project:</strong> PMS (Progress Mapping System)</li>
-    <li><strong>Role:</strong> Java Developer</li>
-    <li><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
-    <li><strong>Frameworks:</strong> Spring Boot</li>
-    <li><strong>Database:</strong> MySQL</li>
-  </ul>
-</div><br>
-
-                <div><strong><u>Project Description: </u></strong></div>
-                <ul>
-                        <li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.</li>
-                        <li>Designed and implemented the backend using Spring Boot to handle APIs, data processing, and business logic.</li>
-                        <li>Created a responsive front-end using HTML, CSS, and JavaScript for intuitive user interaction and real-time updates.</li>
-                        <li>Managed data persistence and retrieval using MySQL database for storing project and task records securely.</li>
-                        <li>Implemented role-based access and modular architecture to ensure scalability and maintainability.</li>
-                        <li>Conducted thorough testing and validation of APIs and frontend functionality to ensure reliability and performance.</li>
-                    </ul><br>
-                    <div><strong><u>Roles & Responsibilities:</u></strong></div>
-                    <ul>
-                        <li>Requirement analysis and understanding of functional specifications.</li>
-                        <li>Designing and developing code for new FRS/FR/CR requests.</li>
-                        <li>Debugging and resolving application issues and defects.</li>
-                        <li>Creating and executing unit test cases to ensure code quality.</li>
-                        <li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.</li>
-                    </ul>
-                </div>
-            </section>
-
+        <div class="row"><div class="company"><b>Yonosys Technologies Pvt. Ltd</b></div><div>Aug 2024 – Present · Hyderabad</div></div>
+        <ul>
+          <li><strong>Project:</strong> PMS (Progress Mapping System)</li>
+          <li><strong>Role:</strong> Java Developer</li>
+          <li><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
+          <li><strong>Frameworks:</strong> Spring Boot</li>
+          <li><strong>Database:</strong> MySQL</li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Projects -->
-    <section>
+    <section class="section">
       <h2>Projects</h2>
-      <div class="rule"></div>
-      <div class="company-name">Target-Stance Extraction</div>
+      <div class="company">Target-Stance Extraction | Python, ML, NLP</div>
       <ul>
-        <li>Built a system for stance detection (Favor/Against/Neutral) using ML & NLP.</li>
-        <li>Worked on preprocessing, model training, and document error correction.</li>
+        <li>Developed stance detection system (Favor/Against/Neutral).</li>
+        <li>Worked on preprocessing, model training, and code debugging.</li>
       </ul>
-
-      <div class="company-name">ShopSmart</div>
+      <div class="company">ShopSmart | Python, FastAPI, PostgreSQL, React.js</div>
       <ul>
-        <li>Developed a Local Online Shopping System with React.js frontend.</li>
-        <li>Backend implemented with FastAPI & PostgreSQL for performance.</li>
+        <li>Built Local Online Shopping System with React.js frontend.</li>
+        <li>Backend powered by FastAPI & PostgreSQL.</li>
       </ul>
     </section>
 
-    <!-- Skills -->
-    <section>
-      <h2>Technical Skills</h2>
-      <div class="rule"></div>
-      <ul>
-        <li><strong>Languages:</strong> Python, Java, HTML, CSS, JavaScript, SQL</li>
-        <li><strong>Libraries:</strong> React.js, NumPy, Pandas</li>
-        <li><strong>Frameworks & Tools:</strong> FastAPI, Git, GitHub, Unix</li>
-        <li><strong>Coursework:</strong> DSA, OOP, DBMS</li>
-        <li><strong>Interests:</strong> Full-Stack Development, Backend Development, Python</li>
-      </ul>
-    </section>
-
-    <!-- Achievements -->
-    <section>
-      <h2>Achievements & Certifications</h2>
-      <div class="rule"></div>
+    <section class="section">
+      <h2>Achievements</h2>
       <ul>
         <li>Prathibha Award for 10 CGPA in 10th Standard (2019)</li>
-        <li>National Level Fest Teckzite Participation (2020)</li>
-        <li>Winner - Defect Detective Competition (2025)</li>
-        <li>AWS Cloud Building Workshop Certificate (2024)</li>
-        <li>AI Tools Workshop Certificate (2024)</li>
-        <li>Mridhangam Minor Course Certification</li>
+        <li>Second Prize in Sneha Nethra Employee Academy</li>
       </ul>
     </section>
-     <div class="actions-bottom" aria-label="Page actions">
-                <a href="https://yonosyshyd-prog.github.io/yonosysemp" class="btn">Back</a>
-                <button type="button" onclick="window.print()" aria-label="Print this profile">Print</button>
-            </div>
+
+    <section class="section">
+      <h2>Participation & Workshops</h2>
+      <ul>
+        <li>Winner - Defect Detective Competition (2025)</li>
+        <li>AI Tools Workshop Certificate (2024)</li>
+        <li>AWS Cloud Building Workshop (2024)</li>
+        <li>Online Art Competition “Bharatiya Kala Pratiyogita” (2024)</li>
+        <li>National Level Fest Teckzite (2020)</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Co-Curricular Activities</h2>
+      <ul>
+        <li>Mridhangam Minor Course</li>
+        <li>Kuchipudi Dance</li>
+        <li>Technical Team Member - Student Mithra Organisation, RGUKT</li>
+        <li>Photography Team Member - SDCAC, RGUKT</li>
+      </ul>
+    </section>
+
+    <hr style="height:1px; background-color:#000; border:none;">
+
+    <section class="section">
+      <div style="display:flex; justify-content:space-between; margin-top:40px;">
+        <div>
+          <b>Prasanna Kethireddy</b><br>
+          <b>Place:</b> Hyderabad <br>
+        </div>
+      </div>
+    </section>
+
+    <div class="actions-bottom" aria-label="Page actions">
+      <a href="https://yonosyshyd-prog.github.io/yonosysemp" class="btn">Back</a>
+      <button type="button" onclick="window.print()" aria-label="Print this profile">Print</button>
+    </div>
   </main>
 </body>
 </html>
