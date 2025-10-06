@@ -13,7 +13,8 @@
 
         body {
             font-family: 'Times New Roman', serif;
-            background-color: #f5f5f5;
+            /*background-color: #f5f5f5;*/
+            background-color: #DCDCDC;
             padding: 25px;
         }
 
@@ -57,13 +58,19 @@
             margin-bottom: 5px;
         }
 
-        .header .location {
-            font-size: 18px;
+        .header h4 {
+            font-size: 21px;
+            font-weight: normal;
+            margin-bottom: 5px;
+        }
+
+        .header .location .role{
+            font-size: 19px;
             margin-bottom: 5px;
         }
 
         .header .contact {
-            font-size: 18px;
+            font-size: 19px;
         }
 
         .header .contact a {
@@ -199,18 +206,18 @@
                 max-width: 100%;
             }
 
+            .header {
+                flex-direction: row;
+                justify-content: flex-start;
+                text-align: left;
+            }
+
+            .header-content {
+                text-align: left;
+            }
+
             .print-button {
                 display: none;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .header {
-                flex-direction: column;
-            }
-            
-            .profile-photo {
-                margin-bottom: 15px;
             }
         }
     </style>
@@ -221,9 +228,11 @@
             <img src="ProfilePhoto.JPG" alt="Profile Photo" class="profile-photo">
             <div class="header-content">
                 <h1>Shivkumar Gadgi</h1>
+                <h4>Java Full-Stack Developer</h4>
                 <div class="location">📍 Hyderabad</div>
                 <div class="contact">
-                    ✉ <a href="mailto:info@yonosys.com" style="text-decoration: none;">info@yonosys.com</a> 🌐 <a href="http://www.yonosys.com" style="text-decoration: none;">Yonosys.com</a>
+                    ✉ <a href="mailto:hr@yonosys.com" style="text-decoration: none;">hr@yonosys.com</a> 
+                    🌐 <a href="http://www.yonosys.com" style="text-decoration: none;">Yonosys.com</a>
                 </div>
             </div>
         </div>
@@ -231,11 +240,14 @@
         <div class="section-title">Professional Summary</div>
         <div class="content">
             <ul>
-                <li>Hands-on experience in <strong>developing and testing dynamic web-based applications</strong> with a strong understanding of the <strong>Software Development Life Cycle (SDLC).</strong></li>
+                <li>Hands-on experience in <strong>developing</strong> and <strong>testing dynamic web-based applications</strong> with a strong understanding of the <strong>Software Development Life Cycle (SDLC).</strong></li>
                 <li>Proficient in <strong>Agile methodologies</strong>, collaborating effectively in cross-functional teams to deliver high-quality software.</li>
-                <li>Expertise in <strong>White-box</strong> and <strong>Black-box testing</strong>, with strong knowledge of System Testing including <strong>Smoke, Regression, Retesting, and Sanity testing</strong>.</li>
-                <li>Skilled in writing <strong>Unit Test cases</strong>, maintaining Traceability Matrices, and ensuring full test coverage against <strong>FRS, FR, and CR</strong>.</li>
+                <li>Proficient in handling <strong>Functional Requirement Specifications (FRS)</strong>, <strong>Feature Requests (FR)</strong>, <strong>Change Requests (CR)</strong>, and <strong>bug management</strong>.</li>
+                <li>Expertise in <strong>White-box</strong> and <strong>Black-box testing</strong>, with strong knowledge of System Testing including <strong>Smoke, Regression, Retesting</strong> and <strong>Sanity testing</strong>.</li>
+                <li>Skilled in writing <strong>Unit Test cases</strong>, maintaining Traceability Matrices, and ensuring full test coverage against <strong>FRS, FR</strong> and <strong>CR</strong>.</li>
                 <li>Experienced with tools such as <strong>Jira</strong> for project management, <strong>GitHub</strong> for version control, and <strong>SelectorsHub/TruePath</strong> for validating locators.</li>
+                <li>Expertise in <strong>System Testing</strong>, including <strong>Smoke, Retesting, Regression</strong>, and <strong>Sanity Testing</strong>.</li>
+                <li>Able to design and maintain a <strong>Traceability Matrix</strong> to ensure complete requirements validation.</li>
             </ul>
         </div>
 
@@ -384,5 +396,3 @@
     </div>
 </body>
 </html>
-
-
