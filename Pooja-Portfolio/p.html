@@ -1,110 +1,177 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
- <style>
-  .center-text {
-    text-align: top-center;
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>pooja ojha Profile</title>
+        <style>
+    /* ======= Base (ATS-friendly: no colors, simple fonts) ======= */
+    :root { --page-width: 800px; }
+    html, body { padding: 0; margin: 0; }
+    body { font-family: "Times New Roman", Times, serif; line-height: 1.4; color: #000; background: #fff; }
+    .container { width:100%; max-width:none; margin:0; padding:16px; }
+
+    /* ======= Utility ======= */
+    .sr-only { position: absolute; left: -9999px; }
+    .muted { opacity: 0.9; }
+    .small { font-size: 0.95rem; }
+
+    /* ======= Actions (screen only) ======= */
+    .actions { position: sticky; top: 0; background: #fff; border-bottom: 1px solid #000; padding: 8px 16px; display: flex; gap: 8px; z-index: 10; }
+    .actions button { border: 1px solid #000; background: #fff; padding: 8px 12px; cursor: pointer; font-size: 0.95rem; }
+    .actions button:focus { outline: 2px solid #000; outline-offset: 2px; }
+
+    /* ======= Header ======= */
+    header h1 { font-size: 2rem; margin: 0 0 4px; letter-spacing: 0.3px; font-family: "Times New Roman", Times, serif; font-weight: bold;}
+    header .role { font-weight: 600; margin: 0 0 8px; }
+    .contact { display: block; font-size: 0.98rem; }
+    .contact a { color: inherit; text-decoration: none; border-bottom: 1px dotted #000; }
+
+    /* ======= Sections ======= */
+    section { margin-top: 16px; }
+
+    .rule { height: 1px; background: #000; margin: 8px 0 12px; }
+    ul { margin: 6px 0 0 18px; padding: 0; }
+    li { margin: 4px 0; }
+
+    /* ======= Experience & Education Blocks ======= */
+    .block { margin-bottom: 10px; }
+    .block .row-1 { display: flex; justify-content: space-between; gap: 12px; font-weight: 800; }
+    .block .row-2 { display: flex; justify-content: space-between; gap: 12px; font-style: italic; }
+
+    .company-name {
+    font-size: 18px;   /* Increase text size */
+    font-weight: 900;  /* Optional — bolder */
+}
+
+
+h2 { 
+  font-size: 1.3rem; 
+  margin: 16px 0 8px; 
+  text-transform: capitalize;   /* ✅ First letter uppercase for each word */
+  letter-spacing: 0.3px;
+  font-weight: bold;
+}
+
+
+/* Make the main resume content fit within the viewport */
+#resume.container {
+  max-width: 100;       /* keep your desired width */
+  margin: 0 auto;         /* center horizontally */
+  height: 100%;           /* stretch to viewport height */
+  overflow: auto;         /* internal scroll if needed for print preview */
+  box-sizing: border-box; /* include padding in height */
+  padding: 16px;
+}
+
+/* Center the bottom print button */
+.actions-bottom {
+  display: flex;
+  justify-content: center;
+  gap: 20px;          /* ✅ space between the Back and Print buttons */
+  padding: 20px 0;    /* no border-top */
+}
+
+.actions-bottom button,
+.actions-bottom .btn {
+  border: 1px solid #000;
+  background: #fff;   /* keep the semicolon */
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-decoration: none; /* for <a> styled as button */
+  color: #000;
+}
+
+.project-details ul {
+  list-style-type: square;
+}
+
+
+    /* Avoid multi-column layouts for ATS, keep everything single column */
+
+    /* ======= Print ======= */
+    @page { size: A4; margin: 14mm; }
+    @media print {
+      .actions { display: none !important; }
+      body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+    @media print {
+  .actions-bottom {
+    display: none !important; /* button container will not appear on printed page */
   }
-</style>
-</head>
-<body>
+}
+    /* buttons */
 
- <table>
-      <tr>
-<td><img src=
-        "image.jpeg"
-         width="125" height="125"; 
-         alt="web.org"></td>
+.actions-bottom {
+  display: flex;
+  gap: 15px;
+  justify-content: center; /* Center align */
+  margin-top: 20px;
+}
 
-   <td> <h1 class="top-center-text" >Pooja Ojha</h1>
-    <p>Java Full Stack Developer </p>
-    <p > Hyderabad,india |<a href=""> info@yonosys.com  <a href="https://www.yonosys.com/"> | yonosys.com </a></p></td>
-    
-  </tr>
-</table>
-    
-  
-  
-    <h2>Professional Summary</h2>
-     <hr>
-    <p> <ul>
-<li>Hands-on experience in developing dynamic web-based software applications.<br></li>
+.actions-bottom .btn,
+.actions-bottom button {
+  background-color: white;       /* White background */
+  color: #007bff;                /* Blue text */
+  padding: 10px 20px;
+  border: 2px solid #007bff;     /* Blue border */
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
 
-<li>Strong understanding of the Software Development Life Cycle (SDLC).<br></li>
+.actions-bottom .btn:hover,
+.actions-bottom button:hover {
+  background-color: #007bff;   /* Blue on hover */
+  color: white;                /* White text on hover */
+}
+  </style>
+    </head>
+    <body>
 
-<li>Experienced in developing and delivering projects using the Agile model.<br></li>
+        <main id="resume" class="container" role="main">
+            <header style="display:flex;align-items:center;gap:50px;">
+                <div class="profile-photo">
+<img src= "image.jpeg"alt="Profile Photo"style="width:140px;height:150px;border-radius:50%;object-fit:cover;" /></div>
+               <div>
+                        <h1 style="font-size: 32px; font-weight: 900;">Pooja Ojha</h1>
+                        <p class="role" style="font-size: 20px; font-weight: 600;">Java Full-Stack Developer</p>
+                        <a href="mailto:info@yonosys.com" style="font-size: 16px;">info@yonosys.com</a>&nbsp; &nbsp; &nbsp;
+                        <a href="https://www.yonosys.com" style="font-size: 16px;">www.yonosys.com</a><br>
+                </div>
 
-<li>Experienced in writing unit test cases for fixed Functional Requirement.<br></li>
+            </header>
 
-<li>Specifications (FRS), Feature Requests (FR), and Change Requests (CR).<br></li>
+            <section CMBX12="summary">
+                <h2>Professional Summary</h2>
+                <div class="rule" CMBX12="true"></div>
+                <ul>
+  <!-- Developer-related skills -->
+  <li>Hands-on experience developing dynamic web-based applications using the <strong>MVC.</strong></li>
+  <li>Strong understanding of the <strong>Software Development Life Cycle (SDLC).</strong></li>
+  <li>Experienced in developing and delivering projects using the <strong>Agile model.</strong> </li>
+  <li>Proficient in handling <strong>Functional Requirement Specifications (FRS), Feature Requests (FR), Change Requests (CR),</strong> and <strong>bug management.</strong></li>
+  <li>Experienced in writing <strong>Unit Test Cases</strong> and maintaining comprehensive test coverage.</li>
+  <li>Proficient with issue tracking and project management tools such as <strong>Jira</strong> for collaboration and task tracking.</li>
+  <li>Experienced in managing <strong>GitHub</strong> repositories for version control and collaborative development.</li>
+  <li>Comfortable inspecting and validating locators using tools like <strong>SelectorsHub</strong> and <strong>TruePath.</strong></li>
 
-<li>Knowledge of deploying and managing applications on Apache Tomcat server.<br></li>
+  <!-- Testing-focused skills -->
+  <li>Solid knowledge of <strong>White-box</strong> and <strong>Black-box Testing</strong> techniques.</li>
+  <li>Expertise in <strong>System Testing,</strong> including <strong>Smoke, Retesting, Regression,</strong> and <strong>Sanity Testing.</strong></li>
+  <li>Able to design and maintain a <strong>Traceability Matrix</strong> to ensure complete requirements validation.</li>
 
-<li>Skilled in handling GitHub repositories for version control, collaboration, and code management.<br></li>
+                </ul>
+            </section>
 
-<li>Worked on integrating web applications with relational databases (MySQL) for dynamic data management<br></li>
+            <section aria-labelledby="education">
+                <h2>Education</h2>
+                <div class="rule" aria-hidden="true"></div>
 
-<li>Hands-on experience in developing and maintaining Java-based web applications using Servlets, JSP, and JDBC<br></li>
-
-<li>Comfortable with inspecting and validating locators using development tools such as SelectorsHub and TruePath.<br></li>
-
-<li>Proficient in issue tracking and project management using tools such as JIRA for effective collaboration and task tracking.<br></li>
-
-<li>Solid knowledge of White-hox Testing and Black-box Testing,Strong expertise in System Testing including Smoke Testing. <br></li>
-
-<li>Retesting Regression Testing and Sanity Testing.<br></li>
-
-</ul>
-
-
-    </p>
-    
-    
-
- 
-    
-      
- 
-    <h2>Skills</h2>
-     <hr><ul>
-       <li><b>Programming Languages:</b>Java<br></li>
-       <li><b>Web Technologies:</b>HTML, CSS, JavaScript<br></li>
-       <li><b>DataBase:</b>MySQL<br></li>
-       <li><b>Management Tools:</b>Jira<br></li>
-       <li><b>Repository Management Tools:</b>GitHub<br></li>
-        </ul>
-        
-       <h2>Experience</h2>
-       <hr><ul>
-       <p style="text-align:right;">Aug 2024 - Present Hyderabad</p>
-       <h2>Yonosys Technologies Pvt.Ltd<br></h2>
-        <li><b>Project:</b>PMS(Progress Mapping System)<br></li>
-        <li><b>Role:</b>Java Developer<br></li>
-        <li><b>Languages:</b>Java,HTML,CSS,JavaScript<br></li>
-        <li><b>Frameworks:</b>Spring Boot<br></li>
-        <li><b>DataBase:</b>MYSQL<br></li>
-        </ul>
-   <h2> Project Description:</h2>
- <ul>
-<li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.<br></li>
-<li>Designed and implemented the backend using Spring Boot to handle APIs, data processing, and business logic.<br></li>
-<li>Created a responsive front-end using HTML, CSS, and JavaScript for intuitive user interaction and real-time updates.<br></li>
-<li>Managed data persistence and retrieval using MySQL database for storing project and task records securely.<br></li>
-<li>Implemented role-based access and modular architecture to ensure scalability and maintainability.<br></li>
-<li>Conducted thorough testing and validation of APIs and frontend functionality to ensure reliability and performance.<br></li>
-</ul>
-<h2>Roles & Responsibilities:</h2>
-<ul>
-<li>Requirement analysis and understanding of functional specifications.<br></li>
-<li>Designing and developing code for new FRS/FR/CR requests.<br></li>
-<li>Debugging and resolving application issues and defects.<br></li>
-<li>Creating and executing unit test cases to ensure code quality.<br></li>
-<li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.<br></li>
-</ul>
- 
-  
-    <h2> Education </h2>
-    <hr>
+                
     <ul>
        <li> B.Tech Computer Science - V.D.F College, Latur <br></li>
         (2020 - 2023) <br>
@@ -116,42 +183,108 @@
        
 </ul>
    
-    <h2>Projects</h2>
-    <hr>
-       <ul>
-   <h3>Calculator</h3>
-        <li><p>A Calculator was developed to slove <br>
+                </div>
+            </section>
+
+            <section aria-labelledby="skills">
+                <h2>Technical Skills</h2>
+                <div class="rule" aria-hidden="true"></div>
+                <ul>
+                    <li><strong>Languages:</strong> Java, HTML5, CSS3, JavaScript</li>
+                    <li><strong>Databases:</strong> SQL</li>
+                    <li><strong>Frameworks/Libraries:</strong> Spring Boot</li>
+                    <li><strong>Management Tool:</strong> Jira</li>
+                    <li><strong>Repository Management Tool:</strong> GitHub</li>
+                    <li><strong>API Testing Tool:</strong> Postman</li>
+                </ul>
+            </section>
+
+            <section aria-labelledby="experience">
+                <h2>Experience</h2>
+                <div class="rule" aria-hidden="true"></div>
+
+                <div class="block">
+                <div class="row-1">
+                    <div class="company-name">➤ <u>Yonosys Technologies Pvt. Ltd</u></div>
+             <div>Aug 2024 – Present · Hyderabad</div>
+                </div>
+                <div class="project-details">
+
+  <ul>
+    <li><strong>Project:</strong> PMS (Progress Mapping System)</li>
+    <li><strong>Role:</strong> Java Developer</li>
+    <li><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
+    <li><strong>Frameworks:</strong> Spring Boot</li>
+    <li><strong>Database:</strong> MySQL</li>
+  </ul>
+</div><br>
+
+
+                <div><strong><u>Project Description: </u></strong></div>
+                <ul>
+                        <li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.</li>
+                        <li>Designed and implemented the backend using Spring Boot to handle APIs, data processing, and business logic.</li>
+                        <li>Created a responsive front-end using HTML, CSS, and JavaScript for intuitive user interaction and real-time updates.</li>
+                        <li>Managed data persistence and retrieval using MySQL database for storing project and task records securely.</li>
+                        <li>Implemented role-based access and modular architecture to ensure scalability and maintainability.</li>
+                        <li>Conducted thorough testing and validation of APIs and frontend functionality to ensure reliability and performance.</li>
+                    </ul><br>
+                    <div><strong><u>Roles & Responsibilities:</u></strong></div>
+                    <ul>
+                        <li>Requirement analysis and understanding of functional specifications.</li>
+                        <li>Designing and developing code for new FRS/FR/CR requests.</li>
+                        <li>Debugging and resolving application issues and defects.</li>
+                        <li>Creating and executing unit test cases to ensure code quality.</li>
+                        <li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section aria-labelledby="projects">
+                <h2>Projects</h2>
+                <div class="rule" aria-hidden="true"></div>
+
+                <div class="company-name">➤  <strong><u>Calculator</u></strong></div>
+                    <ul>
+                       <li><p>A Calculator was developed to slove <br>
            arithmetic function using js knowledge</p></li>
             
            <li> <P>Language used:</P></li>
             HTML
             CSS
             JavaScript
+                    </ul><br>
 
-              
-      <h3>Driver Drowsiness Detection</h3>
-      <li><p>Followed Software Development Life Cycle process<br></li>
+                    <div class="company-name">➤  <strong><u>Driver Drowsiness Detection</u></strong></div>
+                    <ul>
+        <li><p>Followed Software Development Life Cycle process<br></li>
        <li>Detects drowsiness to decrease road accidents<br></li>
        <li>No database storage or external devices required</p></li>
-    </ul>
-    <h2> Certifications </h2>
-       <hr>
-<ul>
-        <li>Advanced Program on Java Full Stack Development (Angular) – Anudeep Foundation<br></li>
+                    </ul>
+
+            </section>
+
+
+            <section aria-labelledby="certs">
+                <h2 id="certs">Certifications</h2>
+                <div class="rule" aria-hidden="true"></div>
+                <ul>
+         <li>Advanced Program on Java Full Stack Development (Angular) – Anudeep Foundation<br></li>
        <li> Python Programming – Om Sai Info<br></li>
        <li> Core Java – Naresh IT<br></li>
-     </ul>
-         <br>
-         <br>
-          <br>
-          <br>
-  
-        <div style="text-align: center;">
-      <button><a href="file:///C:/Users/Lenovo/Downloads/Pooja%20Oza-1.pdf"style="color:blue;">Download</a></button>
- 
-      
-      <button><a href="https://yonosyshyd-prog.github.io/yonosysemp/"style="color:blue;">Back</a></button>
-     </div>
+                </ul>
+            </section>
+        </main>
 
-</body>
+        <script>
+    // (Optional) Allow keyboard shortcuts: Ctrl/Cmd+P prints, Alt+Left goes back
+    // Browsers already support Ctrl/Cmd+P; no extra code needed.
+  </script> 
+  
+<div class="actions-bottom" aria-label="Page actions">
+  <a href="https://yonosyshyd-prog.github.io/yonosysemp" class="btn">Back</a>
+  <button type="button" onclick="window.print()" aria-label="Print this profile">Print</button>
+</div>
+
+    </body>
 </html>
