@@ -44,7 +44,7 @@
           <h1 style="margin: 0;">Shrijit Das</h1>
           <p style="margin: 4px 0;">
             📍 Hyderabad, India |
-            <a href="mailto:info@yonosys.com">info@yonosys.com</a> |
+            <a href="mailto:hr@yonosys.com">hr@yonosys.com</a> |
             <a href="https://yonosys.com" target="_blank">yonosys.com</a>
           </p>
         </td>
@@ -91,7 +91,7 @@
     <!-- Work Experience -->
     <h2>Work Experience</h2>
     <p><b>Yonosys Technologies Pvt. Ltd.</b> — <i>Java Developer</i></p>
-<p><b>Aug 2024 – Present · Hyderabad</b></p>
+<p><b>Aug 2025 – Present · Hyderabad</b></p>
 <p><b>Project:</b> Progress Mapping System (PMS)</p>
 <ul>
   <li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.</li>
@@ -148,12 +148,14 @@
 
     <!-- Contact -->
     <h2>Contact</h2>
-    <p>Email: <a href="mailto:info@yonosys.com">info@yonosys.com</a></p>
+    <p>Email: <a href="mailto:hr@yonosys.com">hr@yonosys.com</a></p>
 
     <div style="display: flex; gap: 10px; margin-bottom: 15px;">
   <!-- Back Button -->
   <button class="btn btn-back" onclick="goBack()">⬅ Back</button>
-<button class="btn btn-download" onclick="downloadPDF()">⬇ Download my Resume as PDF</button>
+
+  <!-- Print Button -->
+  <button class="btn btn-download" onclick="printResume()">🖨 Print</button>
 </div>
 
   </div>
@@ -161,28 +163,20 @@
 
   <!-- Script for PDF download -->
   <script>
-    function downloadPDF() {
-      const element = document.getElementById("resume-content");
-      const options = {
-        margin: 0.5,
-        filename: 'Shrijit_Das_Resume.pdf',
-        image: { type: 'jpeg', quality: 0.98 },
-        html2canvas: { scale: 2 },
-        jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
-      };
-      html2pdf().set(options).from(element).save();
-    }
-
-    function goBack() {
-    if (document.referrer) {
+  function goBack() {
+    if (window.history.length > 1) {
       window.history.back();
     } else {
-      window.location.href = '/'; // Replace with your homepage URL if needed
+      window.location.href = '/'; // fallback homepage
     }
   }
-  </script>
+
+  function printResume() {
+    window.print();
+  }
+</script>
+
 
 </body>
 </html>
-
 
