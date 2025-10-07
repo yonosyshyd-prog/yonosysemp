@@ -7,194 +7,237 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 20px;
+      margin: 30px;
+      line-height: 1.6;
     }
-    .buttons {
-      margin-bottom: 20px;
+
+    h1, h2, h3 {
+      color: #000;
+      margin-bottom: 4px;
     }
-    button {
-      padding: 8px 16px;
-      margin-right: 10px;
+
+    hr {
       border: none;
-      background-color: #007bff;
-      color: white;
-      border-radius: 5px;
-      cursor: pointer;
+      height: 1px;
+      background-color: #000;
+      margin: 4px 0 8px 0;
     }
-    button:hover {
-      background-color: #0056b3;
+
+    ul {
+      margin: 0 0 12px 20px;
     }
+
+    a {
+      color: #007bff;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
     /* Header layout */
     .header {
       display: flex;
       align-items: center;
       margin-bottom: 20px;
     }
+
     .header img {
       width: 120px;
       height: 120px;
       border-radius: 50%;
       margin-right: 20px;
     }
+
     .header-info h1 {
       margin: 0;
+      font-size: 28px;
     }
-    ul{
-      padding-left: 15px;
+
+    /* Education & Experience layout */
+    .edu-item, .exp-item {
+      margin-bottom: 10px;
     }
-    h2 {
-    margin-bottom: 4px; /* reduce gap below heading */
-  }
-  hr {
-    margin-top: 4px;    /* reduce gap above the line */
-    margin-bottom: 8px; /* keep a little space below */
-    border: none;
-    height: 1px;
-    background-color: black;
-  }
+
+    .edu-row, .exp-row {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .edu-row b, .exp-row b {
+      font-weight: bold;
+    }
+
+    .location {
+      font-style: italic;
+    }
+
+    /* Buttons */
+    .buttons {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    button {
+      padding: 10px 20px;
+      margin: 5px;
+      border: none;
+      background-color: #007bff;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    @media (max-width: 600px) {
+      .header {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .header img {
+        margin-bottom: 15px;
+      }
+    }
   </style>
 </head>
 <body>
 
-  <!-- Header with photo + name -->
+  <!-- Header -->
   <div class="header">
-    <img src="Sindhuphoto.png" alt="Your Photo">
+    <img src="Sindhuphoto.png" alt="Sindhu Photo">
     <div class="header-info">
       <h1>Sindhu Nagalla</h1>
-     <p>
-  Java Full Stack Developer<br>
-  &#9993; <a href="mailto:hr@yonosys.com">hr@yonosys.com</a> | 
-  🌐 <a href="http://www.yonosys.com" target="_blank">www.yonosys.com</a>
-
-
-</p>
-
+      <p>
+        Java Full Stack Developer <br>
+        📧 <a href="mailto:hr@yonosys.com">hr@yonosys.com</a> | 🌐 
+        <a href="http://www.yonosys.com" target="_blank">www.yonosys.com</a>
+      </p>
     </div>
   </div>
 
-  
-  <h2> Professional Summary</h2>
+  <!-- Professional Summary -->
+  <h2>Professional Summary</h2>
   <hr>
   <ul>
     <li>Hands-on experience in developing dynamic web-based software applications.</li>
     <li>Strong understanding of the Software Development Life Cycle (SDLC).</li>
     <li>Experienced in developing and delivering projects using the Agile model.</li>
     <li>Solid knowledge of White-box Testing and Black-box Testing.</li>
-    <li>Strong expertise in System Testing including Smoke Testing, Retesting, Regression Testing and Sanity Testing.</li>
-    <li>Comfortable with inspecting and validating locators using development tools such as SelectorsHub and
- TruePath.</li>
- <li>Experienced in writing unit test cases for fixed Functional Requirement Specifications (FRS), Feature Requests
- (FR), and Change Requests (CR).</li>
- <li>Able to design and maintain Traceability Matrix to ensure complete test coverage and requirements validation.</li>
- <li>Skilled in handling GitHub repositories for version control, collaboration, and code management.</li>
- <li>Knowledge of deploying and managing applications on Apache Tomcat server.</li>
+    <li>Strong expertise in System Testing including Smoke, Retesting, Regression and Sanity Testing.</li>
+    <li>Comfortable with inspecting and validating locators using tools like SelectorsHub and TruePath.</li>
+    <li>Experienced in writing unit test cases for FRS, FR, and CR requirements.</li>
+    <li>Able to design and maintain Traceability Matrix for complete test coverage.</li>
+    <li>Skilled in handling GitHub repositories for version control and collaboration.</li>
+    <li>Knowledge of deploying and managing applications on Apache Tomcat.</li>
   </ul>
 
- 
- <h2>Education</h2>
- <hr> 
-    <b>Sai Spurthi Institute of Technology-Btech,Computer Science and Engineering</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2020-2024</b>
-    <br>
-    <i>CGPA-8.02&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Sathupalli</i>
-      <br><br>
-  <b>Sri Vani Junior College-Intermediate(MPC)</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2018-2020</b>
-    <br>
-    <i>CGPA-9.5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Sathupalli</i>
-      <br><br>
-      <b>Geethanjali Vidyalayam School-SSC</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>2017-2018</b>
-    <br>
-    <i>CGPA-8.8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>Sathupalli</i>
-  
+  <!-- Education -->
+  <h2>Education</h2>
+  <hr>
+
+  <div class="edu-item">
+    <div class="edu-row">
+      <b>Sai Spurthi Institute of Technology</b>
+      <b>2020 - 2024</b>
+    </div>
+    <p>B.Tech, Computer Science and Engineering</p>
+    <p>CGPA: 8.02 | <span class="location">Sathupalli</span></p>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-row">
+      <b>Sri Vani Junior College</b>
+      <b>2018 - 2020</b>
+    </div>
+    <p>Intermediate (MPC)</p>
+    <p>CGPA: 9.5 | <span class="location">Sathupalli</span></p>
+  </div>
+
+  <div class="edu-item">
+    <div class="edu-row">
+      <b>Geethanjali Vidyalayam School</b>
+      <b>2017 - 2018</b>
+    </div>
+    <p>SSC</p>
+    <p>CGPA: 8.8 | <span class="location">Sathupalli</span></p>
+  </div>
+
+  <!-- Skills -->
   <h2>Skills</h2>
   <hr>
   <ul>
-    <li><b>Languages:</b>Java.HTML,CSS,JavaScript</li>
-    <li><b>Database & Tools:</b> MYSQL, Oracle SQL & PLSQL ,SQL *Plus, MYSQL workbench. </li>
-    <li><b>Frameworks/Libraries:</b>Spring Boot,Eclipse,VS Code</li>
-    <li><b>Management Tool:</b>Jira</li>
-    <li><b>Repository Management Tool:</b> Git,GitHub</li>
-    <li><b>API Testing Tool:</b>Postman</li>
+    <li><b>Languages:</b> Java, HTML, CSS, JavaScript</li>
+    <li><b>Database & Tools:</b> MySQL, Oracle SQL & PL/SQL, MySQL Workbench</li>
+    <li><b>Frameworks/Libraries:</b> Spring Boot, Eclipse, VS Code</li>
+    <li><b>Management Tool:</b> Jira</li>
+    <li><b>Version Control:</b> Git, GitHub</li>
+    <li><b>API Testing Tool:</b> Postman</li>
   </ul>
 
-  
+  <!-- Experience -->
   <h2>Experience</h2>
   <hr>
-  <b><u>Yonosys Technologies Pvt Ltd </b></u>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>August-Present,Hyderabad</b>
-    <br>
-   
-  <ul>
-    <li><b>Project:</b> PMS(Progress Mapping System)</li>
- <li><b>Role:</b> Java Developer</li>
- <li><b>Languages:</b> Java, HTML, CSS, JavaScript</li>
- <li><b>Frameworks:</b> Spring Boot</li>
- <li><b>Database:</b>MYSQL</li>
-  </ul>
-  <b><u>Project Description:</u></b>
-  <ul>
-    <li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.</li>
-    <li>Designed and implemented the backend using Spring Boot to handle APIs, data processing, and business logic.</li>
-    <li>Created a responsive front-end using HTML, CSS, and JavaScript for intuitive user interaction and real-time updates.</li>
-    <li>Managed data persistence and retrieval using MySQL database for storing project and task records securely.</li>
-    <li>Implemented role-based access and modular architecture to ensure scalability and maintainability.</li>
-    <li>Conducted thorough testing and validation of APIs and frontend functionality to ensure reliability and performance.</li>
-  </ul>
-  <b><u>Roles & Responsibilities:</u></b>
-  <ul>
-    <li>Requirement analysis and understanding of functional specifications.</li>
-    <li>Designing and developing code for new FRS/FR/CR requests.</li>
-    <li>Debugging and resolving application issues and defects.</li>
-    <li>Creating and executing unit test cases to ensure code quality.</li>
-    <li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.</li>
-  </ul>
-  
+  <div class="exp-item">
+    <div class="exp-row">
+      <b>Yonosys Technologies Pvt Ltd</b>
+      <b>Aug 2024 – Present | Hyderabad</b>
+    </div>
+
+    <ul>
+      <li><b>Project:</b> PMS (Progress Mapping System)</li>
+      <li><b>Role:</b> Java Developer</li>
+      <li><b>Tech Stack:</b> Java, Spring Boot, MySQL, HTML, CSS, JavaScript</li>
+    </ul>
+
+    <b><u>Project Description:</u></b>
+    <ul>
+      <li>Developed a Progress Mapping System (PMS) for task and project tracking.</li>
+      <li>Implemented backend APIs using Spring Boot and MySQL.</li>
+      <li>Built a responsive frontend with HTML, CSS, and JavaScript.</li>
+      <li>Ensured modular architecture and role-based access.</li>
+      <li>Performed thorough testing and API validation using Postman.</li>
+    </ul>
+
+    <b><u>Roles & Responsibilities:</u></b>
+    <ul>
+      <li>Requirement analysis and functional understanding.</li>
+      <li>Developing new features and fixing bugs.</li>
+      <li>Creating and executing unit test cases.</li>
+      <li>Collaborating in Agile team meetings and sprint reviews.</li>
+    </ul>
+  </div>
+
+  <!-- Projects -->
   <h2>Projects</h2>
   <hr>
-  <h3>Secure Text Transfer Using Diffie-Hellman Key Exchange Based on Cloud.  </h3>
-  <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project presents a best solution for secure text transfer leveraging the Diffie- Hellman 
-key exchange algorithm within a cloud-based infrastructure. The DH key exchange process 
-ensures that a shared secret key is generated independently by both the sender and the 
-receiver, frustrate potential eavesdroppers. </p>
-<h3>Semi Supervised Kmeans Ddos Detection Method Using Hybrid Feature Selection Algorithm.</h3>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;This project presents a best solution for Detecting the Different Ddos attack by using the 
-Hybrid Feature Selection Algorithm. we adopt a semi-supervised learning framework, which 
-utilizes both labeled and unlabeled data for training, enhancing the robustness and 
-generalization capability of the detection model.  </p>
 
+  <h3>Secure Text Transfer Using Diffie-Hellman Key Exchange Based on Cloud</h3>
+  <p>This project focuses on secure text transfer using the Diffie-Hellman key exchange within a cloud-based system. It ensures that a shared secret key is independently generated by both sender and receiver, preventing eavesdropping.</p>
 
+  <h3>Semi-Supervised K-means DDoS Detection Using Hybrid Feature Selection</h3>
+  <p>This project detects DDoS attacks using a hybrid feature selection algorithm within a semi-supervised framework, leveraging both labeled and unlabeled data for robust and generalizable detection.</p>
 
-<h2>Certifications</h2>
-<hr>
-<ul>
-  <li>
-    Course Completion on NPTEL Online Certification “Programming in java” Certificate.</li>
-<li>Two month internship participated in “JAVA”(Certificate of Participation) Certificate </li>
-<li>Oracle Database(Coursera). 
-  </li>
-</ul>
+  <!-- Certifications -->
+  <h2>Certifications</h2>
+  <hr>
+  <ul>
+    <li>NPTEL Certification – Programming in Java</li>
+    <li>Java Internship – Two Months (Certificate of Participation)</li>
+    <li>Oracle Database (Coursera)</li>
+  </ul>
 
-<br>
-<br>
-<b>Sindhu Nagalla</b>
+  <br><b>Sindhu Nagalla</b>
 
-<br>
-
-<center>
- <div class="buttons">
+  <div class="buttons">
     <button onclick="window.print()">Print</button>
     <button onclick="window.location.href='https://yonosyshyd-prog.github.io/yonosysemp/'">Back</button>
   </div>
-  </center>
+
 </body>
 </html>
-
-
