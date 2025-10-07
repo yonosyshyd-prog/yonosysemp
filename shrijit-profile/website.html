@@ -1,210 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shrijit Das | Resume</title>
-  <style>
-  .btn {
-    padding: 10px 20px;
-    height: 45px; /* ✅ Fixed height for both */
-    display: inline-flex;
-    align-items: center; /* ✅ Vertically centers text */
-    justify-content: center;
-    border: none;
-    border-radius: 6px;
-    color: white;
-    cursor: pointer;
-  }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shrijit Das | Resume</title>
+    <style>
+      .btn {
+        padding: 10px 20px;
+        height: 45px; /* ✅ Fixed height for both */
+        display: inline-flex;
+        align-items: center; /* ✅ Vertically centers text */
+        justify-content: center;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        cursor: pointer;
+      }
 
-  .btn-back {
-    background: #6c757d;
-  }
+      .btn-back {
+        background: #6c757d;
+      }
 
-  .btn-download {
-    background: #0073e6;
-    margin-bottom: 15px;
-  }
+      .btn-download {
+        background: #0073e6;
+        margin-bottom: 15px;
+      }
 
-  /* New styles for cropped photo */
-  .profile-container {
-    width: 100px;
-    height: 125px; /* Adjusted for a more portrait-like crop, suitable for professional headshot; tweak as needed */
-    overflow: hidden;
-    border-radius: 8px; /* Optional: slight rounding for modern look */
-    display: inline-block;
-    vertical-align: top;
-  }
+      /* New styles for cropped photo */
+      .profile-container {
+        width: 100px;
+        height: 125px; /* Adjusted for a more portrait-like crop, suitable for professional headshot; tweak as needed */
+        overflow: hidden;
+        border-radius: 8px; /* Optional: slight rounding for modern look */
+        display: inline-block;
+        vertical-align: top;
+      }
 
-  .profile-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Crops to fill the container while maintaining aspect ratio; centers the subject */
-    object-position: top; /* Focuses crop on the top (face) if needed */
-  }
-</style>
-  <!-- html2pdf.js CDN -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-</head>
-<body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px;">
+      .profile-img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Crops to fill the container while maintaining aspect ratio; centers the subject */
+        object-position: top; /* Focuses crop on the top (face) if needed */
+      }
+    </style>
+    <!-- html2pdf.js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  </head>
+  <body style="font-family: Arial, sans-serif; line-height: 1.6; margin: 20px">
+    <!-- Resume Content Starts -->
+    <div id="resume-content">
+      <!-- Header with Cropped Photo -->
+      <table>
+        <tr>
+          <td>
+            <div class="profile-container">
+              <img
+                src="portfolio-photo.jpg"
+                alt="Shrijit Das"
+                class="profile-img"
+              />
+            </div>
+          </td>
+          <td style="padding-left: 15px; vertical-align: top; padding-top: 5px">
+            <h1 style="margin: 0">Shrijit Das</h1>
+            <h3 style="margin: 2px 0 6px 0; font-weight: normal; color: #555">
+              Java Fullstack Developer
+            </h3>
 
-  <!-- Resume Content Starts -->
-  <div id="resume-content">
+            <p style="margin: 4px 0">
+              📍 Hyderabad, India |
+              <a href="mailto:hr@yonosys.com">hr@yonosys.com</a> |
+              <a href="https://yonosys.com" target="_blank">yonosys.com</a>
+            </p>
+          </td>
+        </tr>
+      </table>
 
-    <!-- Header with Cropped Photo -->
-    <table>
-      <tr>
-        <td>
-          <div class="profile-container">
-            <img src="portfolio-photo.jpg" alt="Shrijit Das" class="profile-img">
-          </div>
-        </td>
-        <td style="padding-left: 15px; vertical-align: top; padding-top: 5px;">
-          <h1 style="margin: 0;">Shrijit Das</h1>
-          <h3 style="margin: 2px 0 6px 0; font-weight: normal; color: #555;">Java Fullstack Developer</h3>
+      <hr />
 
-          <p style="margin: 4px 0;">
-            📍 Hyderabad, India |
-            <a href="mailto:hr@yonosys.com">hr@yonosys.com</a> |
-            <a href="https://yonosys.com" target="_blank">yonosys.com</a>
-          </p>
-        </td>
-      </tr>
-    </table>
+      <!-- Professional Summary -->
+      <h2>Professional Summary</h2>
+      <ul>
+        <li>
+          Worked on integrating web applications with relational databases
+          (<strong>MySQL</strong>, <strong>Oracle</strong>) for dynamic data
+          management.
+        </li>
+        <li>
+          Hands-on experience in developing and maintaining
+          <strong>Java</strong>-based web applications using
+          <strong>Servlets</strong>, <strong>JSP</strong>, and
+          <strong>JDBC</strong>.
+        </li>
+        <li>
+          Hands-on experience in developing dynamic web-based software
+          applications.
+        </li>
+        <li>
+          Strong understanding of the
+          <strong>Software Development Life Cycle (SDLC)</strong>.
+        </li>
+        <li>
+          Experienced in developing and delivering projects using the
+          <strong>Agile</strong> model.
+        </li>
+        <li>
+          Solid knowledge of <strong>White-box Testing</strong> and
+          <strong>Black-box Testing</strong>.
+        </li>
+        <li>
+          Strong expertise in <strong>System Testing</strong> including
+          <strong>Smoke Testing</strong>, <strong>Retesting</strong>,
+          <strong>Regression Testing</strong>, and
+          <strong>Sanity Testing</strong>.
+        </li>
+        <li>
+          Proficient in issue tracking and project management using tools such
+          as <strong>JIRA</strong> for effective collaboration and task
+          tracking.
+        </li>
+        <li>
+          Comfortable with inspecting and validating locators using development
+          tools such as <strong>SelectorsHub</strong> and
+          <strong>TruePath</strong>.
+        </li>
+        <li>
+          Experienced to handle <strong>FRS</strong>, <strong>FR</strong>,
+          <strong>CR</strong>, and <strong>Bugs</strong>.
+        </li>
+        <li>
+          Experienced in writing <strong>unit test cases</strong> for fixed
+          <strong>Functional Requirement Specifications (FRS)</strong>,
+          <strong>Feature Requests (FR)</strong>, and
+          <strong>Change Requests (CR)</strong>.
+        </li>
+        <li>
+          Able to design and maintain <strong>Traceability Matrix</strong> to
+          ensure complete test coverage and requirements validation.
+        </li>
+        <li>
+          Skilled in handling <strong>GitHub</strong> repositories for
+          <strong>version control</strong>, <strong>collaboration</strong>, and
+          <strong>code management</strong>.
+        </li>
+        <li>
+          Proficient in <strong>debugging</strong> and
+          <strong>resolving issues</strong> in
+          <strong>Java-based web applications</strong>, ensuring seamless
+          performance and reliability.
+        </li>
+        <li>
+          Strong ability to analyze <strong>root causes of errors</strong> and
+          implement effective <strong>bug fixes</strong> in
+          <strong>full-stack Java projects</strong>.
+        </li>
+        <li>
+          Knowledge of deploying and managing applications on
+          <strong>Apache Tomcat</strong> server.
+        </li>
+        <li>
+          Skilled in creating and managing
+          <strong>Requirement Traceability Matrix (RTM)</strong> for effective
+          requirement tracking and validation.
+        </li>
+      </ul>
 
-    <hr>
+      <hr />
 
-    <!-- Professional Summary -->
-    <h2>Professional Summary</h2>
-    <ul>
-  <li>Worked on integrating web applications with relational databases (<strong>MySQL</strong>, <strong>Oracle</strong>) for dynamic data management.</li>
-  <li>Hands-on experience in developing and maintaining <strong>Java</strong>-based web applications using <strong>Servlets</strong>, <strong>JSP</strong>, and <strong>JDBC</strong>.</li>
-  <li>Hands-on experience in developing dynamic web-based software applications.</li>
-  <li>Strong understanding of the <strong>Software Development Life Cycle (SDLC)</strong>.</li>
-  <li>Experienced in developing and delivering projects using the <strong>Agile</strong> model.</li>
-  <li>Solid knowledge of <strong>White-box Testing</strong> and <strong>Black-box Testing</strong>.</li>
-  <li>Strong expertise in <strong>System Testing</strong> including <strong>Smoke Testing</strong>, <strong>Retesting</strong>, <strong>Regression Testing</strong>, and <strong>Sanity Testing</strong>.</li>
-  <li>Proficient in issue tracking and project management using tools such as <strong>JIRA</strong> for effective collaboration and task tracking.</li>
-  <li>Comfortable with inspecting and validating locators using development tools such as <strong>SelectorsHub</strong> and <strong>TruePath</strong>.</li>
-  <li>Experienced to handle <strong>FRS</strong>, <strong>FR</strong>, <strong>CR</strong>, and <strong>Bugs</strong>.</li>
-  <li>Experienced in writing <strong>unit test cases</strong> for fixed <strong>Functional Requirement Specifications (FRS)</strong>, <strong>Feature Requests (FR)</strong>, and <strong>Change Requests (CR)</strong>.</li>
-  <li>Able to design and maintain <strong>Traceability Matrix</strong> to ensure complete test coverage and requirements validation.</li>
-  <li>Skilled in handling <strong>GitHub</strong> repositories for <strong>version control</strong>, <strong>collaboration</strong>, and <strong>code management</strong>.</li>
-  <li>Proficient in <strong>debugging</strong> and <strong>resolving issues</strong> in <strong>Java-based web applications</strong>, ensuring seamless performance and reliability.</li>
-  <li>Strong ability to analyze <strong>root causes of errors</strong> and implement effective <strong>bug fixes</strong> in <strong>full-stack Java projects</strong>.</li>
-  <li>Knowledge of deploying and managing applications on <strong>Apache Tomcat</strong> server.</li>
-  <li>Skilled in creating and managing <strong>Requirement Traceability Matrix (RTM)</strong> for effective requirement tracking and validation.</li>
-</ul>
+      <!-- Skills -->
+      <h2>Technical Skills</h2>
+      <p><b>Programming:</b> Java, JavaScript, HTML, CSS</p>
+      <p><b>Frameworks & Libraries:</b> Spring Boot, React</p>
+      <p><b>Databases:</b> PostgreSQL, MySQL, SQL Optimization</p>
+      <p><b>Tools:</b> Git, GitHub, Maven, Docker</p>
+      <p>
+        <b>Core Competencies:</b> API & Microservice Development, Database
+        Schema Design & Optimization, gRPC, Kafka, DSA, Communication
+      </p>
 
+      <hr />
 
+      <!-- Work Experience -->
+      <h2>Work Experience</h2>
 
+      <p><b>Yonosys Technologies Pvt. Ltd.</b> — <i>Java Developer</i></p>
+      <p><b>Aug 2025 – Present · Hyderabad</b></p>
+      <p><b>Project:</b> Progress Mapping System (PMS)</p>
 
-    <hr>
+      <ul>
+        <li>
+          Developed a <strong>Progress Mapping System (PMS)</strong> to
+          efficiently track and manage organizational tasks and projects.
+        </li>
+        <li>
+          Designed and implemented backend services using
+          <strong>Spring Boot</strong> to handle RESTful APIs, data processing,
+          and core business logic.
+        </li>
+        <li>
+          Created a responsive and intuitive front-end using
+          <strong>HTML</strong>, <strong>CSS</strong>, and
+          <strong>JavaScript</strong> for real-time interaction and seamless
+          user experience.
+        </li>
+        <li>
+          Managed data persistence, retrieval, and updates using the
+          <strong>MySQL</strong> database, ensuring security and performance of
+          data transactions.
+        </li>
+        <li>
+          Implemented <strong>role-based access control</strong> and followed a
+          <strong>modular architecture</strong> for scalability and
+          maintainability.
+        </li>
+        <li>
+          Conducted thorough <strong>API testing</strong> and frontend
+          validation to ensure functional reliability and high-quality
+          deliverables.
+        </li>
+        <li>
+          Performed detailed <strong>requirement analysis</strong> and
+          interpreted functional specifications to align development with
+          business goals.
+        </li>
+        <li>
+          Designed and developed code for new <strong>FRS</strong>,
+          <strong>FR</strong>, and <strong>CR</strong> requests while
+          maintaining backward compatibility.
+        </li>
+        <li>
+          Actively <strong>debugged</strong> and resolved bugs, defects, and
+          application issues identified during development or QA phases.
+        </li>
+        <li>
+          Created and executed <strong>unit test cases</strong> to ensure code
+          quality, stability, and adherence to acceptance criteria.
+        </li>
+        <li>
+          Collaborated with team members during daily stand-ups, sprint
+          planning, and code reviews to ensure consistent progress and aligned
+          deliverables.
+        </li>
+      </ul>
 
-    <!-- Skills -->
-    <h2>Technical Skills</h2>
-    <p><b>Programming:</b> Java, JavaScript, HTML, CSS</p>
-    <p><b>Frameworks & Libraries:</b> Spring Boot, React</p>
-    <p><b>Databases:</b> PostgreSQL, MySQL, SQL Optimization</p>
-    <p><b>Tools:</b> Git, GitHub, Maven, Docker</p>
-    <p><b>Core Competencies:</b> API & Microservice Development, Database Schema Design & Optimization, gRPC, Kafka, DSA, Communication</p>
+      <hr />
 
-    <hr>
+      <!-- Projects -->
+      <h2>Projects</h2>
 
-    <!-- Work Experience -->
-    <h2>Work Experience</h2>
+      <p><strong>Stocksys Backend</strong> — <i>September 2025</i></p>
+      <ul>
+        <li>
+          Developed a robust <strong>backend REST API</strong> for a company
+          website.
+        </li>
+        <li>
+          Implemented secure <strong>authentication</strong> and
+          <strong>authorization</strong> using
+          <strong>Spring Security</strong> with
+          <strong>JWT tokenization</strong> and validation.
+        </li>
+        <li>
+          Designed and enforced
+          <strong>role-based access control (RBAC)</strong> with well-defined
+          <strong>public</strong> and <strong>private routes</strong>.
+        </li>
+        <li>
+          Engineered and optimized <strong>MySQL</strong> database schemas to
+          ensure seamless integration and efficient API operations.
+        </li>
+      </ul>
 
-<p><b>Yonosys Technologies Pvt. Ltd.</b> — <i>Java Developer</i></p>
-<p><b>Aug 2025 – Present · Hyderabad</b></p>
-<p><b>Project:</b> Progress Mapping System (PMS)</p>
+      <p>
+        <strong>Patient Management System</strong> —
+        <i>April 2025 – June 2025</i>
+      </p>
+      <ul>
+        <li>
+          Successfully created a <strong>microservice-based</strong>
+          <strong>Patient Management System</strong> using
+          <strong>Java</strong>, <strong>Spring Boot</strong>, and
+          <strong>PostgreSQL</strong>.
+        </li>
+        <li>
+          Implemented <strong>gRPC</strong> for
+          <strong>interservice communication</strong>.
+        </li>
+        <li>
+          Implemented <strong>Kafka</strong> for
+          <strong>asynchronous communication</strong> between microservices.
+        </li>
+      </ul>
 
-<ul>
-  <li>Developed a <strong>Progress Mapping System (PMS)</strong> to efficiently track and manage organizational tasks and projects.</li>
-  <li>Designed and implemented backend services using <strong>Spring Boot</strong> to handle RESTful APIs, data processing, and core business logic.</li>
-  <li>Created a responsive and intuitive front-end using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong> for real-time interaction and seamless user experience.</li>
-  <li>Managed data persistence, retrieval, and updates using the <strong>MySQL</strong> database, ensuring security and performance of data transactions.</li>
-  <li>Implemented <strong>role-based access control</strong> and followed a <strong>modular architecture</strong> for scalability and maintainability.</li>
-  <li>Conducted thorough <strong>API testing</strong> and frontend validation to ensure functional reliability and high-quality deliverables.</li>
-  <li>Performed detailed <strong>requirement analysis</strong> and interpreted functional specifications to align development with business goals.</li>
-  <li>Designed and developed code for new <strong>FRS</strong>, <strong>FR</strong>, and <strong>CR</strong> requests while maintaining backward compatibility.</li>
-  <li>Actively <strong>debugged</strong> and resolved bugs, defects, and application issues identified during development or QA phases.</li>
-  <li>Created and executed <strong>unit test cases</strong> to ensure code quality, stability, and adherence to acceptance criteria.</li>
-  <li>Collaborated with team members during daily stand-ups, sprint planning, and code reviews to ensure consistent progress and aligned deliverables.</li>
-</ul>
+      <p>
+        <strong>Tea Leaves Disease Classification System</strong> —
+        <i>March 2024 – May 2024</i>
+      </p>
+      <ul>
+        <li>
+          Developed <strong>Vision Transformer (ViT)</strong> and
+          <strong>CNN</strong> <strong>deep-learning models</strong> for
+          detection of tea leaf diseases.
+        </li>
+        <li>
+          Utilized <strong>ESP32 Camera module</strong> for image capture and
+          <strong>Ngrok</strong> to get the image on
+          <strong>Google Colab</strong> environment.
+        </li>
+        <li>
+          Integrated <strong>Telegram bot</strong> for instant dissemination of
+          results.
+        </li>
+      </ul>
 
+      <hr />
 
-    <hr>
+      <!-- Education -->
+      <h2>Education</h2>
+      <p>
+        <b>B.Tech in Electronics & Communication Engineering</b><br />
+        Siliguri Institute of Technology, Darjeeling (2020–2024)<br />
+        CGPA: 8.49
+      </p>
 
-    <!-- Projects -->
-    <h2>Projects</h2>
+      <p>
+        <b>Higher Secondary (Class 12)</b><br />
+        St. Xavier's School, Malda (2019–2020)<br />
+        Percentage: 72.4%
+      </p>
 
-<p><strong>Stocksys Backend</strong> — <i>September 2025</i></p>
-<ul>
-  <li>Developed a robust <strong>backend REST API</strong> for a company website.</li>
-  <li>Implemented secure <strong>authentication</strong> and <strong>authorization</strong> using <strong>Spring Security</strong> with <strong>JWT tokenization</strong> and validation.</li>
-  <li>Designed and enforced <strong>role-based access control (RBAC)</strong> with well-defined <strong>public</strong> and <strong>private routes</strong>.</li>
-  <li>Engineered and optimized <strong>MySQL</strong> database schemas to ensure seamless integration and efficient API operations.</li>
-</ul>
+      <p>
+        <b>Secondary Education (Class 10)</b><br />
+        St. Xavier's School, Malda (2017–2018)<br />
+        Percentage: 76.83%
+      </p>
 
-<p><strong>Patient Management System</strong> — <i>April 2025 – June 2025</i></p>
-<ul>
-  <li>Successfully created a <strong>microservice-based</strong> <strong>Patient Management System</strong> using <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>PostgreSQL</strong>.</li>
-  <li>Implemented <strong>gRPC</strong> for <strong>interservice communication</strong>.</li>
-  <li>Implemented <strong>Kafka</strong> for <strong>asynchronous communication</strong> between microservices.</li>
-</ul>
+      <hr />
 
-<p><strong>Tea Leaves Disease Classification System</strong> — <i>March 2024 – May 2024</i></p>
-<ul>
-  <li>Developed <strong>Vision Transformer (ViT)</strong> and <strong>CNN</strong> <strong>deep-learning models</strong> for detection of tea leaf diseases.</li>
-  <li>Utilized <strong>ESP32 Camera module</strong> for image capture and <strong>Ngrok</strong> to get the image on <strong>Google Colab</strong> environment.</li>
-  <li>Integrated <strong>Telegram bot</strong> for instant dissemination of results.</li>
-</ul>
+      <!-- Contact -->
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:hr@yonosys.com">hr@yonosys.com</a></p>
 
+      <div style="display: flex; gap: 10px; margin-bottom: 15px">
+        <!-- Back Button -->
+        <button class="btn btn-back" onclick="goBack()">⬅ Back</button>
 
-    <hr>
+        <!-- Print Button -->
+        <button class="btn btn-download" onclick="printResume()">
+          🖨 Print
+        </button>
+      </div>
+    </div>
+    <!-- Resume Content Ends -->
 
-    <!-- Education -->
-    <h2>Education</h2>
-    <p><b>B.Tech in Electronics & Communication Engineering</b><br>
-    Siliguri Institute of Technology, Darjeeling (2020–2024)<br>
-    CGPA: 77.4%</p>
+    <!-- Script for PDF download -->
+    <script>
+      function goBack() {
+        window.location.href = "https://yonosyshyd-prog.github.io/yonosysemp/";
+      }
 
-    <p><b>Higher Secondary (Class 12)</b><br>
-    St. Xavier's School, Malda (2019–2020)<br>
-    Percentage: 72.4%</p>
-
-    <p><b>Secondary Education (Class 10)</b><br>
-    St. Xavier's School, Malda (2017–2018)<br>
-    Percentage: 76.83%</p>
-
-    <hr>
-
-    <!-- Contact -->
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:hr@yonosys.com">hr@yonosys.com</a></p>
-
-    <div style="display: flex; gap: 10px; margin-bottom: 15px;">
-  <!-- Back Button -->
-  <button class="btn btn-back" onclick="goBack()">⬅ Back</button>
-
-  <!-- Print Button -->
-  <button class="btn btn-download" onclick="printResume()">🖨 Print</button>
-</div>
-
-  </div>
-  <!-- Resume Content Ends -->
-
-  <!-- Script for PDF download -->
-  <script>
-  function goBack() {
-    window.location.href = 'https://yonosyshyd-prog.github.io/yonosysemp/'
-  }
-
-  function printResume() {
-    window.print();
-  }
-</script>
-
-
-</body>
+      function printResume() {
+        window.print();
+      }
+    </script>
+  </body>
 </html>
