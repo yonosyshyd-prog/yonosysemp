@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ram Charan Eda - Resume</title>
+  <style>
+    body {
+      font-family: "Times New Roman", serif;
+      margin: 0;
+      padding: 0;
+      background-color: #ffffff;
+      color: #222;
+    }
+
+    .container {
+      width: 85%;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 20px 40px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 15px;
+      margin-bottom: 25px;
+      border-bottom: none; /* Removed the line */
+    }
+
+    .header-img img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 2px solid #333;
+    }
+
+    header h1 {
+      font-size: 32px;
+      margin: 0;
+      color: #000;
+    }
+
+    .contact {
+      font-size: 16px;
+      margin-top: 5px;
+      color: #444;
+    }
+
+    section {
+      margin-bottom: 25px;
+    }
+
+    h2 {
+      border-bottom: 2px solid #000;
+      font-size: 20px;
+      margin-bottom: 10px;
+      padding-bottom: 3px;
+      color: #1a1a1a;
+    }
+
+    p, li {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin: 0;
+    }
+
+    .skills-columns {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .sub-section {
+      margin-bottom: 10px;
+    }
+
+    .project-item {
+      margin-bottom: 15px;
+    }
+
+    .actions-bottom {
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .actions-bottom .btn,
+    .actions-bottom button {
+      background-color: white;
+      color: #007bff;
+      padding: 10px 20px;
+      border: 2px solid #007bff;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+
+    .actions-bottom .btn:hover,
+    .actions-bottom button:hover {
+      background-color: #007bff;
+      color: white;
+    }
+
+    @media print {
+      .actions-bottom {
+        display: none;
+      }
+    }
+
+    @page {
+      size: A4;
+      margin: 14mm;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="header-img">
+        <img src="ram.jpg" alt="Ram Charan Eda">
+      </div>
+      <div class="header-info">
+        <h1>Ram Charan Eda</h1>
+        <p class="role" style="font-size: 18px; font-weight: 600;">Java Full-Stack Developer</p>
+        <a href="mailto:hr@yonosys.com" style="font-size: 16px;">hr@yonosys.com</a> &nbsp; &nbsp;
+        <a href="https://www.yonosys.com" style="font-size: 16px;">www.yonosys.com</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Professional Summary</h2>
+      <ul>
+        <li>Hands-on experience developing dynamic web-based applications using the <strong>MVC</strong>.</li>
+        <li>Strong understanding of the <strong>Software Development Life Cycle (SDLC)</strong>.</li>
+        <li>Experienced in developing and delivering projects using the <strong>Agile model</strong>.</li>
+        <li>Proficient in handling <strong>FRS, FR, CR</strong> requests and bug management.</li>
+        <li>Skilled in writing <strong>Unit Test Cases</strong> and maintaining test coverage.</li>
+        <li>Proficient with <strong>Jira</strong> for collaboration and tracking tasks.</li>
+        <li>Experienced in managing <strong>GitHub</strong> repositories for version control.</li>
+        <li>Comfortable inspecting locators using tools like <strong>SelectorsHub</strong> and <strong>TruePath</strong>.</li>
+        <li>Knowledge of <strong>White-box</strong> and <strong>Black-box Testing</strong>.</li>
+        <li>Expertise in <strong>System Testing</strong>: Smoke, Regression, Sanity, and Retesting.</li>
+        <li>Able to design and maintain a <strong>Traceability Matrix</strong> for requirements validation.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      <p><strong>MTech – Applied AI (2024 - Present)</strong><br>Visvesvaraya National Institute of Technology (NIT), Nagpur</p>
+      <p><strong>BTech – Computer Science Engineering (2022)</strong><br>CMR Technical Campus, Hyderabad</p>
+    </section>
+
+    <section>
+      <h2>Technical Skills</h2>
+      <div class="skills-columns">
+        <div class="sub-section"><strong>Core Programming:</strong> Python, Java, OOPs</div>
+        <div class="sub-section"><strong>Machine Learning & AI:</strong> Scikit-learn, XGBoost, SMOTE, Feature Engineering, OpenCV, NLP, DL</div>
+        <div class="sub-section"><strong>Data Analytics & Visualization:</strong> NumPy, Pandas, Matplotlib, Seaborn, Tableau, Power BI</div>
+        <div class="sub-section"><strong>Database:</strong> MySQL, MS SQL, MongoDB</div>
+        <div class="sub-section"><strong>Additional:</strong> Clay, AI Tools, APIs, Canva, Microsoft Office, Excel, Streamlit</div>
+        <div class="sub-section"><strong>Soft Skills:</strong> Communication, Teamwork, Adaptability, Leadership, Critical Thinking</div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Experience</h2>
+      <div class="block">
+        <div><b>Yonosys Technologies Pvt. Ltd</b> — Aug 2025 - Present, Hyderabad</div>
+        <ul>
+          <li><strong>Project:</strong> PMS (Progress Mapping System)</li>
+          <li><strong>Role:</strong> Java Developer</li>
+          <li><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
+          <li><strong>Frameworks:</strong> Spring Boot</li>
+          <li><strong>Database:</strong> MySQL</li>
+        </ul>
+        <p><strong><u>Project Description:</u></strong></p>
+        <ul>
+          <li>Developed a Progress Mapping System (PMS) to track and manage projects efficiently.</li>
+          <li>Built backend APIs using Spring Boot with MySQL for data storage.</li>
+          <li>Created responsive frontend with HTML, CSS, and JavaScript.</li>
+          <li>Implemented role-based access and modular architecture.</li>
+          <li>Performed testing for quality assurance and stability.</li>
+        </ul>
+
+        <p><strong><u>Roles & Responsibilities:</u></strong></p>
+        <ul>
+          <li>Requirement analysis and code implementation.</li>
+          <li>Developing and testing new FRS/CR requests.</li>
+          <li>Debugging and resolving application issues.</li>
+          <li>Collaborating with the team for smooth delivery.</li>
+        </ul>
+      </div>
+
+    
+    </section>
+
+    <section>
+      <h2>Projects</h2>
+      <div class="project-item">
+        <strong>Online Recruitment Fraud Detection Using Deep Learning</strong>
+        <p>Implemented NLP-based fraud detection using BERT, and RoBERTa models to classify genuine
+vs. fake job postings. Applied feature engineering (TF-IDF, embeddings) and addressed imbalanced
+datasets for reliable performance. Optimized evaluation metrics with high precision, recall, F1-score,
+and ROC-AUC. Deployed as a prototype web application enabling real-time detection for recruiters
+and job seekers.</p>
+      </div>
+      <div class="project-item">
+        <strong>Plant Leaf Disease Detection Using Deep Learning</strong>
+        <p>Developed a deep learning computer vision model for plant leaf disease detection by training CNNs and
+transfer learning architectures on agricultural image datasets. Implemented image preprocessing,
+augmentation, and feature extraction techniques to enhance model robustness and pattern recognition across
+diverse leaf types. Achieved high accuracy, precision, recall, and F1-score in disease classification,
+demonstrating the effectiveness of deep learning in smart agriculture. Deployed the system as a real-time
+application to assist farmers in crop health monitoring and decision-making.
+</p>
+      </div>
+      <div class="project-item">
+        <strong>Plant Image Recognition Using Patterns</strong>
+        <p>Developed a plant image recognition model that identifies species and leaf categories by analyzing visual
+patterns such as shape, texture, and color. Applied deep learning techniques with CNNs and transfer learning to
+classify plant images with high accuracy. Implemented data preprocessing and augmentation to improve model
+robustness across diverse datasets. This project demonstrates expertise in computer vision, pattern recognition,
+and deep learning applications for agriculture and environmental research. </p>
+      </div>
+    </section>
+
+    <div class="actions-bottom">
+      <a href="https://yonosyshyd-prog.github.io/yonosysemp" class="btn">Back</a>
+      <button type="button" onclick="window.print()">Print</button>
+    </div>
+  </div>
+</body>
+</html>
