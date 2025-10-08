@@ -15,7 +15,7 @@
       color: #2c3e50;
     }
     a {
-      color: #3498db;
+      color: #000;
       text-decoration: none;
     }
     a:hover {
@@ -43,9 +43,6 @@
     ul {
       line-height: 1.6;
     }
-    .bottom-buttons {
-      margin-top: 20px;
-    }
     .profile-photo {
       width: 150px;
       height: 150px;
@@ -53,62 +50,147 @@
       object-fit: cover;
       margin-bottom: 15px;
     }
+    .print-button {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .print-button button {
+      background-color: #007bff;
+      color: white;
+      padding: 12px 30px;
+      font-size: 15px;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+      width: 180px;
+      margin: 0 5px;
+    }
+
+    .print-button button a {
+      color: white;
+      text-decoration: none;
+      display: block;
+    }
+
+    .print-button button:hover {
+      background-color: #0056b3;
+    }
+
+    @media print {
+      body {
+        background-color: white;
+        padding: 0;
+        margin: 10px;
+        color: #000;
+      }
+      
+      .header-section {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 20px;
+      }
+      
+      .profile-photo {
+        border-radius: 0;
+        flex-shrink: 0;
+      }
+      
+      .header-content {
+        flex: 1;
+      }
+      
+      section {
+        box-shadow: none;
+        padding: 10px 0;
+        background: white;
+        border-radius: 0;
+        page-break-inside: avoid;
+      }
+      
+      .print-button {
+        display: none;
+      }
+      
+      button {
+        display: none;
+      }
+      
+      h1, h2, h3, h4 {
+        color: #000;
+      }
+      
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
   </style>
 </head>
 <body>
-  <img src="Sarbeswarimage.jpg" alt="Sarbeswar Palai" class="profile-photo">
-  <h1>Sarbeswar Palai</h1>
-  <h3>Java Full Stack Developer at Yonosys Technology Pvt Ltd (Aug 2025 – Present)</h3>
+  <div class="header-section">
+    <img src="Sarbeswarimage.jpg" alt="Sarbeswar Palai" class="profile-photo">
+    <div class="header-content">
+      <h1>Sarbeswar Palai</h1>
+      <h3>Java Full Stack Developer</h3>
+      ✉ <a href="mailto:hr@yonosys.com" style="font-size: 16px;">hr@yonosys.com</a>&nbsp; <b>|</b> &nbsp;
+      🌐 <a href="https://www.yonosys.com" style="font-size: 16px;" target="_blank">Yonosys.com</a>
+    </div>
+  </div><br>
 
   <section>
     <h2>Professional Summary</h2>
     <ul>
-      <li>Experienced in integrating web applications with relational databases such as MySQL and Oracle for smooth data handling.</li>
-      <li>Proficient in developing and maintaining Java-based web applications using Servlets, JSP, and JDBC.</li>
-      <li>Skilled in building and managing dynamic, user-friendly web applications.</li>
-      <li>Strong knowledge of the Software Development Life Cycle (SDLC).</li>
-      <li>Practical experience in delivering projects using the Agile methodology.</li>
-      <li>Good understanding of White-box and Black-box Testing techniques.</li>
-      <li>Hands-on experience in System Testing including Smoke, Retesting, Regression, and Sanity Testing.</li>
-      <li>Familiar with using JIRA for issue tracking, collaboration, and project management.</li>
-      <li>Comfortable working with SelectorsHub and TruePath for locator inspection and validation.</li>
-      <li>Experienced in handling Functional Requirement Specifications (FRS), Feature Requests (FR), Change Requests (CR), and Bugs.</li>
-      <li>Capable of writing unit test cases and ensuring functional accuracy.</li>
-      <li>Skilled in creating and maintaining Requirement Traceability Matrix (RTM) to ensure proper requirement coverage.</li>
-      <li>Proficient in managing GitHub repositories for version control and collaborative development.</li>
-      <li>Strong debugging skills to identify and resolve issues in Java-based applications.</li>
-      <li>Knowledgeable in deploying and managing applications on the Apache Tomcat server.</li>
+      <li>Proficient in developing and maintaining dynamic web-based applications using the <strong>MVC architecture</strong> with Java technologies such as <strong>Servlets, JSP, and JDBC.</strong></li>
+      <li>Experienced in integrating web applications with relational databases like <strong>MySQL</strong> and <strong>Oracle</strong> for efficient data handling.</li>
+      <li>Strong understanding of the <strong>Software Development Life Cycle (SDLC)</strong> and practical experience delivering projects using the <strong>Agile methodology.</strong></li>
+      <li>Hands-on experience in <strong>System Testing</strong> including Smoke, Retesting, Regression, and Sanity Testing, along with <strong>White-box</strong> and <strong>Black-box</strong> testing techniques.</li>
+      <li>Proficient in writing <strong>Unit Test Cases</strong> to ensure code quality and maintain comprehensive test coverage.</li>
+      <li>Skilled in creating and maintaining a <strong>Requirement Traceability Matrix (RTM)</strong> to ensure complete requirement coverage and validation.</li>
+      <li>Experienced in handling <strong>Functional Requirement Specifications (FRS)</strong>, <strong>Feature Requests (FR)</strong>, <strong>Change Requests (CR)</strong>, and <strong>bug management.</strong></li>
+      <li>Strong debugging and troubleshooting skills to identify, analyze, and resolve issues efficiently in Java-based applications.</li>
+      <li>Proficient in using project management and issue tracking tools such as <strong>Jira</strong> for collaboration, progress tracking, and reporting.</li>
+      <li>Experienced in managing <strong>GitHub</strong> repositories for version control and team collaboration.</li>
+      <li>Comfortable inspecting and validating locators using tools like <strong>SelectorsHub</strong> and <strong>TruePath</strong> to support testing and automation.</li>
+      <li>Able to write efficient programs involving <strong>Static and Dynamic Memory Allocation</strong> for optimized performance.</li>
+      <li>Knowledgeable in deploying and managing applications on the <strong>Apache Tomcat Server.</strong></li>
+      <li>Strong understanding of <strong>Functional, Integration,</strong> and <strong>System-level testing</strong> to ensure software reliability and performance.</li>
+      <li>Skilled in building and maintaining <strong>user-friendly, responsive,</strong> and <strong>scalable web applications.</strong></li>
     </ul>
   </section>
 
   <section>
-    <h2>Work Experience</h2>
+    <h2>Experience</h2>
     <h3>Yonosys Technologies Pvt. Ltd. — Full Stack Java Developer</h3>
     <p><i>Aug 2025 – Present · Hyderabad</i></p>
     <ul>
-      <li>Proficient in analyzing requirements and understanding issue reports to identify root causes effectively.</li>
-      <li>Skilled in debugging, resolving issues, and writing comprehensive unit test cases.</li>
-      <li>Capable of thoroughly evaluating both functional and non-functional aspects of applications.</li>
-      <li>Developed and optimized backend services using Java, Spring Boot, MySQL, and Spring Security.</li>
-      <li>Designed and implemented RESTful APIs, integrating them with a frontend for seamless client–server communication.</li>
-      <li>Authored unit tests, conducted API testing using Postman, and efficiently tracked tasks using Jira.</li>
-      <li>Participated in corporate training on enterprise Java development and best practices.</li>
-      <li>Gained hands-on experience with enterprise Java patterns, database design, optimization, and testing methodologies.</li>
+      <li><strong>Project:</strong> PMS (Progress Mapping System)</li>
+      <li><strong>Role:</strong> Java Developer</li>
+      <li><strong>Languages:</strong> Java, HTML, CSS, JavaScript</li>
+      <li><strong>Frameworks:</strong> Spring Boot</li>
+      <li><strong>Database:</strong> MySQL</li>
     </ul>
-  </section>
 
-  <!-- New Experience Section -->
-  <section>
-    <h2>Experience</h2>
-    <h3>Yonosys Technologies Pvt. Ltd</h3>
-    <p><i>Aug 2025 – Present · Hyderabad</i></p>
-    <ul>
-      <li><b>Project:</b> PMS (Progress Mapping System)</li>
-      <li><b>Role:</b> Java Developer</li>
-      <li><b>Languages:</b> Java, HTML, CSS, JavaScript</li>
-      <li><b>Frameworks:</b> Spring Boot</li>
-      <li><b>Database:</b> MySQL</li>
-    </ul>
+    <div><strong><u>Project Description: </u></strong></div>
+      <ul>
+        <li>Developed a Progress Mapping System (PMS) to efficiently track and manage tasks and projects within the organization.</li>
+        <li>Designed and implemented the backend using Spring Boot to handle APIs, data processing, and business logic.</li>
+        <li>Created a responsive front-end using HTML, CSS, and JavaScript for intuitive user interaction and real-time updates.</li>
+        <li>Managed data persistence and retrieval using MySQL database for storing project and task records securely.</li>
+        <li>Implemented role-based access and modular architecture to ensure scalability and maintainability.</li>
+        <li>Conducted thorough testing and validation of APIs and frontend functionality to ensure reliability and performance.</li>
+      </ul><br>
+      
+      <div><strong><u>Roles & Responsibilities:</u></strong></div>
+        <ul>
+          <li>Requirement analysis and understanding of functional specifications.</li>
+          <li>Designing and developing code for new FRS/FR/CR requests.</li>
+          <li>Debugging and resolving application issues and defects.</li>
+          <li>Creating and executing unit test cases to ensure code quality.</li>
+          <li>Collaborating with the team and participating in regular meetings to track progress and align deliverables.</li>
+        </ul>
+      </div>
   </section>
 
   <section>
@@ -120,14 +202,14 @@
         Implemented secure authentication and authorization using Spring Security with JWT tokenization and validation.<br>
         Designed and enforced role-based access control (RBAC).<br>
         Engineered and optimized MySQL database schemas to ensure seamless API operations.
-      </li>
+      </li><br>
       <li>
         <b>E-Commerce Web Application — Feb 2025 – Apr 2025</b><br>
         Built a full-stack e-commerce platform using Java, Spring Boot, JSP, and MySQL.<br>
         Implemented features like product catalog, shopping cart, user authentication, and order management.<br>
         Designed secure REST APIs for cart operations, payment integration, and checkout.<br>
         Integrated GitHub for version control and Postman for API testing.
-      </li>
+      </li><br>
       <li>
         <b>Car Showroom Management System — Nov 2024 – Jan 2025</b><br>
         Developed a web-based system using Java, JDBC, and Servlets to manage cars, customers, and sales.<br>
@@ -148,38 +230,23 @@
   </section>
 
   <section>
-    <h2>Skills</h2>
-    <h4>Programming</h4>
-    <p>Java, JavaScript, HTML, CSS</p>
-
-    <h4>Frameworks & Libraries</h4>
-    <p>Spring Boot, React</p>
-
-    <h4>Databases</h4>
-    <p>PostgreSQL, MySQL, SQL Optimization</p>
-
-    <h4>Tools</h4>
-    <p>Git, GitHub, Maven, Docker</p>
-
-    <h4>Core Competencies</h4>
-    <p>API & Microservice Development, Database Schema Design & Optimization, gRPC, Kafka, DSA, Communication</p>
+    <h2>Technical Skills</h2>
+    <p><strong style="color: #2c3e50; font-size: 18px;">Programming:</strong> Java, JavaScript, HTML, CSS</p>
+    <p><strong style="color: #2c3e50; font-size: 18px;">Frameworks & Libraries:</strong> Spring Boot, React</p>
+    <p><strong style="color: #2c3e50; font-size: 18px;">Databases:</strong> PostgreSQL, MySQL, SQL Optimization</p>
+    <p><strong style="color: #2c3e50; font-size: 18px;">Tools:</strong> Git, GitHub, Maven, Docker</p>
+    <p><strong style="color: #2c3e50; font-size: 18px;">Core Competencies:</strong> API & Microservice Development, Database Schema Design & Optimization, gRPC, Kafka, DSA, Communication</p>
   </section>
-
+  
   <section>
-    <h2>Contact</h2>
-     <a href="https://yonosys.com" target="_blank">https://yonosys.com</a><br>
-     <a href="mailto:hr@yonosys.com" style="font-size: 16px;">hr@yonosys.com</a>
+    <div><strong style="font-size: 18px">Sarbeswar Palai</strong><br>
+      <strong>Place :</strong> Hyderabad
+    </div>
   </section>
 
-  <div class="bottom-buttons">
-    <button onclick="window.location.href='https://yonosyshyd-prog.github.io/yonosysemp/'">Back</button>
-    <button onclick="window.print()">Print</button>
-    <a href="resume.pdf" download><button>Download Resume</button></a>
+  <div class="print-button">
+    <button onclick="window.print()"><strong>Print</strong></button>
+    <button><a class="nav-link" href="#" onclick="window.location.href='https://yonosyshyd-prog.github.io/yonosysemp/'; return false;"><strong>Back</strong></a></button>
   </div>
 </body>
 </html>
-
-
-
-
-
