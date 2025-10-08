@@ -5,26 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shrijit Das | Resume</title>
     <style>
-      .btn {
-        padding: 10px 20px;
-        height: 45px; /* ✅ Fixed height for both */
-        display: inline-flex;
-        align-items: center; /* ✅ Vertically centers text */
-        justify-content: center;
-        border: none;
-        border-radius: 6px;
-        color: white;
-        cursor: pointer;
-      }
+      .button-container {
+  display: flex;
+  justify-content: center; /* centers the buttons */
+  align-items: center; /* aligns them vertically */
+  gap: 16px;
+  margin: 25px 0;
+}
 
-      .btn-back {
-        background: #6c757d;
-      }
+.btn {
+  display: inline-flex;
+  align-items: center; /* centers icon + text vertically */
+  justify-content: center;
+  gap: 6px; /* small gap between icon and text */
+  height: 45px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
 
-      .btn-download {
-        background: #0073e6;
-        margin-bottom: 15px;
-      }
+.btn-back {
+  background: #6c757d;
+}
+
+.btn-download {
+  background: #0073e6;
+}
+
+/* subtle hover effects */
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
 
       /* New styles for cropped photo */
       .profile-container {
@@ -42,14 +60,6 @@
         object-fit: cover; /* Crops to fill the container while maintaining aspect ratio; centers the subject */
         object-position: top; /* Focuses crop on the top (face) if needed */
       }
-
-      .button-container {
-  display: flex;
-  justify-content: center; /* ✅ Centers the buttons horizontally */
-  align-items: center;      /* Centers vertically (not strictly needed here) */
-  gap: 15px;                /* Space between buttons */
-  margin: 20px 0;           /* Adds some breathing room */
-}
     </style>
     <!-- html2pdf.js CDN -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
@@ -374,6 +384,7 @@
     </script>
   </body>
 </html>
+
 
 
 
