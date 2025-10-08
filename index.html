@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Yonosys</title>
+  <title>Yonosys - Full Stack Java Developers</title>
   <style>
     body {
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -32,35 +32,37 @@
       margin-bottom: px;
     }
 
-    a {
+    .profile-link {
       display: inline-block;
       margin: 8px 12px;
       padding: 10px 18px;
       text-decoration: none;
-      font-size: 1rem;
+      font-size: 1.05rem;
       color: #fff;
       background: #3498db;
       border-radius: 6px;
       transition: all 0.3s ease;
+      min-width: 160px;
+      text-align: center;
     }
 
-    a:hover {
+    .profile-link:hover {
       background: #2980b9;
       transform: translateY(-2px);
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     }
 
-    a:active {
+    .profile-link:active {
       transform: translateY(0);
       box-shadow: none;
     }
     
-    a.visited {
+    .profile-link.visited {
       background: #7c7b87;
       color: #ecf0f1;
     }
 
-    a.visited:hover {
+    .profile-link.visited:hover {
       background: #9b99bf;
     }
 
@@ -74,32 +76,79 @@
       font-weight: bold;
       color: #2c3e50;
     }
+
+    footer {
+      margin-top: 50px;
+      padding: 0.02px;
+      text-align: center;
+      background: #DBDBDB;
+    }
+
+    .footer-content {
+      max-width: 800px;
+      color: #000000;
+      margin: 0 auto;
+    }
+
+    .footer-info {
+      font-size: 1rem;
+      color: #000000;
+      line-height: 1.8;
+      margin: 8px 0;
+    }
+
+    .footer-info strong {
+      color: #000000;
+      font-weight: 600;
+    }
+
+    .footer-link {
+      color: #2e4da1;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .footer-link:hover {
+      color: #16a085;
+      text-decoration: underline;
+    }
   </style>
 </head>
-
 <body>
   <center>
     <h1>
-      <img src="https://www.yonosys.com/assets/images/logo.png" height="150px" width="520px" alt="logo"></h1>
+        <img src="https://www.yonosys.com/assets/images/logo.png" height="150px" width="520px" alt="logo">
+    </h1>
+    
     <h2>Full Stack Java Developers</h2><br><br>
-
+    
     <a href="Shreya%20Resume/ShreyaProfile.html" class="profile-link" target="_blank">Shreya Miryala</a>
     <a href="Thirupathi Reddy Resume/ThirupathiResume.html" class="profile-link" target="_blank">Thirupathi Reddy Puli</a>
     <a href="Prasanna%20Resume/resume.html" class="profile-link" target="_blank">Prasanna Kethireddy</a>
     <a href="Gayathri%20Resume/GayathriProfile.html" class="profile-link" target="_blank">Gayathri Thallapalli</a>
     <a href="Radhika%20Profile/index.html" class="profile-link" target="_blank">Radhika Gopiseti</a>
-    <a href="SarbeswarFolder/MyProfile.html" class="profile-link" target="_blank">Sarbeswar Palai</a>
+    <br><a href="SarbeswarFolder/MyProfile.html" class="profile-link" target="_blank">Sarbeswar Palai</a>
     <a href="shrijit-profile/website.html" class="profile-link" target="_blank">Shrijit Das</a>
     <a href="Tushar%20Resume/TusharProfile.html" class="profile-link" target="_blank">Thakur Tushar Singh</a>
     <a href="Naveen-profile/Azmeera%20Naveen%20-%20Resume.html" class="profile-link" target="_blank">Naveen Azmeera</a>
     <a href="Ram%20Resume/Resume.html" class="profile-link" target="_blank">Ram Charan</a>
-    <a href="sindhu_portfolio/main1.html" class="profile-link" target="_blank">Sindhu Nagalla</a>
+    <br><a href="sindhu_portfolio/main1.html" class="profile-link" target="_blank">Sindhu Nagalla</a>
     <a href="Meghana%20Resume/meghana%20resume.html" class="profile-link" target="_blank">Meghana Kolla</a>
     <a href="Shivkumar/index.html" class="profile-link" target="_blank">Shivkumar Gadgi</a>
     <a href="Pooja-Portfolio/p.html" class="profile-link" target="_blank">Pooja Ojha</a>
     <a href="Sushma-Profile/sushma.html" class="profile-link" target="_blank">Sushma Golla</a>
     <br><br>
   </center>
+  
+  <footer>
+    <div class="footer-content">
+      <h4 style="color: #2e4da1; font-size: 1.35rem; margin-bottom: 20px;">Yonosys Technologies Pvt. Ltd</h4>
+      <p class="footer-info"><strong>Address:</strong> Flat No.7, 2nd Floor, Srilatha Reddy Highbiscus,<br> Vithalrao Nagar Road, Madhapur, Hyderabad, Telangana - 500081</p>
+      <p class="footer-info"><strong>Phone:</strong> +91 7288922456</p>
+      <p class="footer-info"><strong>Website:</strong> <a href="https://www.yonosys.com" class="footer-link" target="_blank">www.yonosys.com</a></p>
+      <p class="footer-info"><strong>Email:</strong> hr@yonosys.com || info@yonosys.com</p>
+    </div>
+  </footer>
   
   <script>
     const links = document.querySelectorAll('.profile-link');
